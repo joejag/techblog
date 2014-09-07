@@ -18,7 +18,7 @@ categories: []
 tags: []
 comments: []
 ---
-<h2>Christmas Delivery</h2></p>
+<h2>Christmas Delivery</h2>
 <p>Due to huge population growth in the world, Santa Claus is having to change his existing process. </p>
 <p>Currently only one Elf can put a present on his Sleigh at a time and Santa wants to be able to be able to use multiple Elves.</p>
 <h3>Specification</h3>

@@ -44,7 +44,7 @@ comments:
   date: '2013-04-07 23:07:10 +0100'
   date_gmt: '2013-04-07 22:07:10 +0100'
   content: |-
-    based on http:&#47;&#47;stackoverflow.com&#47;questions&#47;466764&#47;show-ignored-files-in-git I have this aliased:
+    based on http://stackoverflow.com/questions/466764/show-ignored-files-in-git I have this aliased:
 
     ignored = ls-files --others -i --exclude-standard
 
@@ -67,7 +67,7 @@ comments:
   content: |-
     Remember that a pull --rebase does not preserve merge commits, so if you have merged a branch into your working one, you have to `git fetch &amp;&amp; git rebase -p`.
 
-    I use `git up` for that (https:&#47;&#47;github.com&#47;aanand&#47;git-up), wish it didn't depend on Ruby but works fine.
+    I use `git up` for that (https://github.com/aanand/git-up), wish it didn't depend on Ruby but works fine.
 - id: 165
   author: Alex
   author_email: alexsmith@gmail.com
@@ -86,7 +86,7 @@ comments:
     the hell did I do on Friday again?". :)
 ---
 
-<p>Git gives you as much flexibility in how you construct your VCS workflow as it does for the commands you use on your local repo. In your gitconfig file you can add alises for your favourite commands, in this article I'll talk about mine. You can see my gitconfig on <a href="https:&#47;&#47;github.com&#47;joejag&#47;dotfiles&#47;blob&#47;master&#47;git&#47;gitconfig">github</a>.</p>
+<p>Git gives you as much flexibility in how you construct your VCS workflow as it does for the commands you use on your local repo. In your gitconfig file you can add alises for your favourite commands, in this article I'll talk about mine. You can see my gitconfig on <a href="https://github.com/joejag/dotfiles/blob/master/git/gitconfig">github</a>.</p>
 
 <h3>git standup</h3>
 <em>alias for git log &ndash;&ndash;since yesterday &ndash;&ndash;author joe</em></p>
@@ -113,7 +113,7 @@ comments:
 <em>alias for git status -sb</em></p>
 <p>Git gives a verbose output when you perform a <strong>status</strong> which is excellent when you are getting started with git. As you become used to the output you want a shorter version. The output of this alias shows a single letter that represents the change type and reports how far ahead of the remote branch you are.</p>
 {% highlight bash %}
-## master...origin&#47;master [ahead 2]
+## master...origin/master [ahead 2]
 A  g
 D  gitignore
 {% endhighlight %}
@@ -146,7 +146,7 @@ r de3083a spelling mizzztake<br />
 {% highlight bash %}
 3400455 - spelling mistake (20 minutes ago) <Joe Wright>
 5dae0a0 - whizzbang feature (28 minutes ago) <Joe Wright>
-efaea80 - Removing trailing space on save (4 days ago) <Another Guy>
+efaea80 - Removing trailing space on save (4 days ago) <Another Person>
 c351700 - Copying to system clipboard in vim (5 days ago) <Joe Wright>
 {% endhighlight %}
 <p>I'd be interested to hear about your favourite git aliases too.</p>

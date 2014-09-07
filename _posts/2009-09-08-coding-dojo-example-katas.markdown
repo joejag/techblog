@@ -44,10 +44,10 @@ comments:
 <h3>Current Problems</h3>
 
 <ul>
-<li><a href="http:&#47;&#47;code.joejag.com&#47;coding-dojo-bowling-scores&#47;">Bowling Scores</a></li>
-<li><a href="http:&#47;&#47;code.joejag.com&#47;coding-dojo-vending-machine&#47;">Vending Machine</a></li>
-<li><a href="http:&#47;&#47;code.joejag.com&#47;coding-dojo-converting-between-different-numeral-systems&#47;">Converting numeral systems</a></li>
-<li><a href="http:&#47;&#47;code.joejag.com&#47;coding-dojo-test-first-spreadsheet&#47;">Test First Spreadsheet</a></li>
+<li><a href="{{ site.url }}/coding-dojo/christmas-delivery">Bowling Scores</a></li>
+<li><a href="{{ site.url }}/coding-dojo/vending-machine">Vending Machine</a></li>
+<li><a href="{{ site.url }}/coding-dojo/converting-between-different-numeral-systems">Converting numeral systems</a></li>
+<li><a href="{{ site.url }}/coding-dojo/test-first-spreadsheet">Test First Spreadsheet</a></li>
 </ul>
 
 <h3>Minesweeper Kata</h3>

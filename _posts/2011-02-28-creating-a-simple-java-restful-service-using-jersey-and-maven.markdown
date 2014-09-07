@@ -159,7 +159,7 @@ comments:
 <li>HTTP GET to see all the existing orders</li>
 </ul>
 
-<p>Download the full source of this article <a href='{{ site.url }}/assets/2011/orders_restful_service1.zip'>here</a>.</p>
+<p>Download the full source of this article <a href='{{ site.url }}/assets/2011/orders_restful_service1.zip'>here</a>, or fork it on <a href="https://github.com/joejag/simple-java-restful-service-using-jersey-and-maven">Github</a> </p>
 <p>To make it simple to get it up and running I've added configuration for Jetty to run on port 9090.  You can compile the source code and run a web server to use it by issuing this single Maven command:</p>
 
 {% highlight bash %}
@@ -266,7 +266,7 @@ public class OrdersService
 }
 {% endhighlight %}
 
-<p>Download the full source of this article <a href='{{ site.url }}/assets/2011/orders_restful_service1.zip'>here</a>.</p>
+<p>Download the full source of this article <a href='{{ site.url }}/assets/2011/orders_restful_service1.zip'>here</a>, or fork it on <a href="https://github.com/joejag/simple-java-restful-service-using-jersey-and-maven">Github</a></p>
 
 <h3>Where to learn more</h3>
 <p>There are a number of great articles on how to develop JAX-RS REST applications.  I recommend you start with the <a href="http:&#47;&#47;jersey.java.net&#47;nonav&#47;documentation&#47;latest&#47;user-guide.html#d4e8">Jersey guide</a> for Java applications:</p>

@@ -18,8 +18,9 @@ categories: []
 tags: []
 comments: []
 ---
-<h2>Bowling Scores</h2></p>
+<h2>Bowling Scores</h2>
 <p>The goal of this program is to model a game of bowling. Given a series of input the program should output the players final score.</p>
+
 <h3>Specification&#47;Rules of Bowling</h3>
 <p>Each game, or <b>line</b> of bowling, includes ten turns, or <b>frames</b> for the bowler.</p>
 <p>In each frame, the bowler gets up to two tries to knock down all the pins.</p>
@@ -30,25 +31,31 @@ comments: []
 <p>The game score is the total of all frame scores.</p>
 <p><b>We will not check</b></p>
 <ul>
-<li>Valid rolls
-<li>Correct number of rolls and frames.
-<li>We will not provide scores for intermediate frames.<br />
-</ul></p>
+<li>Valid rolls</li>
+<li>Correct number of rolls and frames.</li>
+<li>We will not provide scores for intermediate frames.</li>
+</ul>
+
 <h3>Example input and output</h3>
-<pre class="sh_ruby">
-Example 1: Gutter balls (all zero)<br />
-[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]<br />
--> 0</p>
-<p>Example 2: All Threes<br />
-[3,3],[3,3],[3,3],[3,3],[3,3],[3,3],[3,3],[3,3],[3,3],[3,3]<br />
--> 60</p>
-<p>Example 3: All Spares with first ball a 4<br />
-[4,6],[4,6],[4,6],[4,6],[4,6],[4,6],[4,6],[4,6],[4,6],[4,6,4]<br />
--> 140</p>
-<p>Example 4: Nine Strikes followed by a gutter ball<br />
-[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[0,0]<br />
--> 240</p>
-<p>Example 5: Perfect Game<br />
-[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,10,10]<br />
--> 300<br />
-</pre></p>
+
+{% highlight bash %}
+Example 1: Gutter balls (all zero)
+[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]
+-> 0
+
+Example 2: All Threes
+[3,3],[3,3],[3,3],[3,3],[3,3],[3,3],[3,3],[3,3],[3,3],[3,3]
+-> 60
+
+Example 3: All Spares with first ball a 4
+[4,6],[4,6],[4,6],[4,6],[4,6],[4,6],[4,6],[4,6],[4,6],[4,6,4]
+-> 140
+
+Example 4: Nine Strikes followed by a gutter ball
+[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[0,0]
+-> 240
+
+Example 5: Perfect Game
+[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,0],[10,10,10]
+-> 300
+{% endhighlight %}
