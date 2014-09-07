@@ -152,102 +152,122 @@ comments:
 <p>There has been a lot of interest in <a href="http:&#47;&#47;en.wikipedia.org&#47;wiki&#47;Resource-oriented_architecture">Resource Orientated Architecture (ROA)</a> online which has resulted in an explosion of excellent libraries that make it simple to use this architectural style.</p>
 <p>The example in this article uses Java, Maven and a JAX-RS library called <a href="http:&#47;&#47;jersey.java.net&#47;">Jersey</a> to create a very simple orders system. </p>
 <p>Our order consists of a reference number and a customer name.  The system has three entry points:</p>
+
 <ul>
-<li>HTTP PUT to create an order
-<li>HTTP GET to see the details of an order
-<li>HTTP GET to see all the existing orders<br />
-</ul></p>
-<p>Download the full source of this article <a href='http:&#47;&#47;localhost&#47;wordpress&#47;wp-content&#47;uploads&#47;2011&#47;02&#47;orders_restful_service1.zip'>here</a>.</p>
+<li>HTTP PUT to create an order</li>
+<li>HTTP GET to see the details of an order</li>
+<li>HTTP GET to see all the existing orders</li>
+</ul>
+
+<p>Download the full source of this article <a href='{{ site.url }}/assets/2011/orders_restful_service1.zip'>here</a>.</p>
 <p>To make it simple to get it up and running I've added configuration for Jetty to run on port 9090.  You can compile the source code and run a web server to use it by issuing this single Maven command:</p>
-<pre class="sh_sh sh_sourceCode">
-mvn jetty:run<br />
-</pre></p>
+
+{% highlight bash %}
+mvn jetty:run
+{% endhighlight %}
+
 <p>I recommend that you use <a href="http:&#47;&#47;curl.haxx.se&#47;download.html">curl</a> to test your RESTful web services as it is easy to change the HTTP verb that you are using.  You can manipulate the orders system using these curl commands.  </p>
-<pre class="sh_sh sh_sourceCode">
-# Add a new order for Bob with ID 1<br />
-curl -X PUT http:&#47;&#47;localhost:9090&#47;orders-server&#47;orders&#47;1?customer_name=bob </p>
-<p># Check the status of the order<br />
-curl -X GET http:&#47;&#47;localhost:9090&#47;orders-server&#47;orders&#47;1 </p>
-<p># See all the orders in the system<br />
-curl -X GET http:&#47;&#47;localhost:9090&#47;orders-server&#47;orders&#47;list<br />
-</pre></p>
+
+{% highlight bash %}
+# Add a new order for Bob with ID 1
+curl -X PUT http://localhost:9090/orders-server/orders/1?customer_name=bob 
+
+# Check the status of the order
+curl -X GET http://localhost:9090/orders-server/orders/1 
+
+# See all the orders in the system
+curl -X GET http://localhost:9090/orders-server/orders/list
+{% endhighlight %}
+
 <p><i>Note: HTTP GET is the default verb used by curl, I've explicitly listed GET in the examples to make it clear which verb is in use.</i></p>
-<h3>The code</h3></p>
+
+<h3>The code</h3>
 <p>To use Jersey you need to add a servlet to your web.xml and create a resource implementation class.</p>
-<h3>web.xml</h3></p>
+
+<h3>web.xml</h3>
 <p>The WEB-INF&#47;web.xml fragment sets up the Jersey Servlet with a parameter listing the package to search for RESTful classes.</p>
-<pre class="sh_sh sh_sourceCode">
-<servlet><br />
-   <servlet-name>Jersey Web Application</servlet-name><br />
-   <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class><br />
-   <init-param></p>
-<param-name>com.sun.jersey.config.property.packages</param-name><br />
-      <!-- Important bit --></p>
-<param-value>com.joejag.code.orders.restservices</param-value><br />
-   </init-param><br />
-   <load-on-startup>1</load-on-startup><br />
-</servlet><br />
-</pre></p>
+{% highlight xml %}
+<servlet>
+  <servlet-name>Jersey Web Application</servlet-name>
+  <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+  <init-param>   
+    <param-name>com.sun.jersey.config.property.packages</param-name>
+    <!-- Important bit -->
+    <param-value>com.joejag.code.orders.restservices</param-value>
+  </init-param>
+  <load-on-startup>1</load-on-startup>
+</servlet>
+{% endhighlight %}
+
 <p>This reads any classes in <i>the com.joejag.code.orders.restservices</i> and looks for annotations declaring resources.  </p>
-<h3>The Java class</h3></p>
+
+<h3>The Java class</h3>
 <p>On the implementation class you can see the @Path annotation on the class signature indicating the resource we are handling.  This is used by Jersey to configure the URL used to interact with the resource.</p>
 <p>Each method has a sub-path declared, an HTTP verb to respond from and the response type to produce.  The method parameters are bound by using either part of the path (with @PathParam) or a separate query parameter (with @QueryParam).</p>
-<pre class="sh_java sh_sourceCode">
-package com.joejag.code.orders.restservices;</p>
-<p>import java.util.Map;<br />
-import java.util.TreeMap;</p>
-<p>import javax.ws.rs.GET;<br />
-import javax.ws.rs.PUT;<br />
-import javax.ws.rs.Path;<br />
-import javax.ws.rs.PathParam;<br />
-import javax.ws.rs.Produces;<br />
-import javax.ws.rs.QueryParam;<br />
-import javax.ws.rs.WebApplicationException;<br />
-import javax.ws.rs.core.Response;</p>
-<p>@Path("orders")<br />
-public class OrdersService<br />
-{<br />
-   &#47;&#47; Stores state simply in a static collection class.<br />
-   private static Map<String, String> orders = new TreeMap<String, String>();</p>
-<p>   @Path("&#47;{order}")<br />
-   @PUT<br />
-   @Produces("text&#47;html")<br />
-   public String create(@PathParam("order") String order,<br />
-                                    @QueryParam("customer_name") String customerName)<br />
-   {<br />
-      orders.put(order, customerName);<br />
-      return "Added order #" + order;<br />
-   }</p>
-<p>   @Path("&#47;{order}")<br />
-   @GET<br />
-   @Produces("text&#47;html")<br />
-   public String find(@PathParam("order") String order)<br />
-   {<br />
-      if (orders.containsKey(order))<br />
-         return "<br />
-<h2>Details on Order #" + order +<br />
-                    "</h2>
-<p>Customer name: " + orders.get(order);</p>
-<p>      throw new WebApplicationException(Response.Status.NOT_FOUND);<br />
-   }</p>
-<p>   @Path("&#47;list")<br />
-   @GET<br />
-   @Produces("text&#47;html")<br />
-   public String list()<br />
-   {<br />
-      String header = "<br />
-<h2>All Orders</h2>n";</p>
-<p>      header += "
-<ul>";<br />
-      for (Map.Entry<String, String> order : orders.entrySet())<br />
-         header += "n
-<li>#" + order.getKey() + " for " + order.getValue() + "</li>";</p>
-<p>      header += "n</ul>";</p>
-<p>      return header;<br />
-   }<br />
-}<br />
-</pre></p>
-<p>Download the full source of this article <a href='http:&#47;&#47;localhost&#47;wordpress&#47;wp-content&#47;uploads&#47;2011&#47;02&#47;orders_restful_service1.zip'>here</a>.</p>
-<h3>Where to learn more</h3></p>
+
+{% highlight java %}
+package com.joejag.code.orders.restservices;
+
+import java.util.Map;
+import java.util.TreeMap;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.PUT;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
+import javax.ws.rs.WebApplicationException;
+import javax.ws.rs.core.Response;
+
+@Path("orders")
+public class OrdersService
+{
+   // Stores state simply in a static collection class.
+   private static Map<String, String> orders = new TreeMap<String, String>();
+
+   @Path("/{order}")
+   @PUT
+   @Produces("text/html")
+   public String create(@PathParam("order") String order,
+                        @QueryParam("customer_name") String customerName)
+   {
+      orders.put(order, customerName);
+      return "Added order #" + order;
+   }
+
+   @Path("/{order}")
+   @GET
+   @Produces("text/html")
+   public String find(@PathParam("order") String order)
+   {
+      if (orders.containsKey(order))
+         return "<h2>Details on Order #" + order + 
+                  "</h2>Customer name: " + orders.get(order);
+             
+      throw new WebApplicationException(Response.Status.NOT_FOUND);
+   }
+
+   @Path("/list")
+   @GET
+   @Produces("text/html")
+   public String list()
+   {
+      String header = " <h2>All Orders</h2>n";
+
+      header += "<ul>";
+      for (Map.Entry<String, String> order : orders.entrySet())
+         header += "\n <li>#" + order.getKey() + " for " + order.getValue() + "</li>";
+
+      header += "\n</ul>";
+
+      return header;
+   }
+}
+{% endhighlight %}
+
+<p>Download the full source of this article <a href='{{ site.url }}/assets/2011/orders_restful_service1.zip'>here</a>.</p>
+
+<h3>Where to learn more</h3>
 <p>There are a number of great articles on how to develop JAX-RS REST applications.  I recommend you start with the <a href="http:&#47;&#47;jersey.java.net&#47;nonav&#47;documentation&#47;latest&#47;user-guide.html#d4e8">Jersey guide</a> for Java applications:</p>
 <p>If you are using Ruby then take a look at the wonderful <a href="http:&#47;&#47;www.sinatrarb.com&#47;">Sinatra</a> project.</p>

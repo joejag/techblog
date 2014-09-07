@@ -1,14 +1,14 @@
 # Site settings
 title: JoeJag - Tech
-email: joeljoejag.com
+email: joe@joejag.com
 description: "Coding and agile blog of Joe Wright"
 baseurl: ""
-url: "http://code.joejag.com"
+# url: "http://code.joejag.com"
 twitter_username: joe_jag
 github_username:  joejag
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: /:year/:title.html
 
 port: 4001

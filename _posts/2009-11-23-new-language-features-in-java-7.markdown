@@ -1257,8 +1257,10 @@ comments:
     by Joe Wright.&nbsp;http:&#47;&#47;code.joejag.com&#47;2009&#47;new-language-features-in-java-7&#47;
     [...]'
 ---
-<p>I'm just back from the <a href="http:&#47;&#47;www.devoxx.com&#47;">Devoxx</a> conference in Antwerp.  An update was given on the <a href="http:&#47;&#47;openjdk.java.net&#47;projects&#47;coin&#47;">new language changes</a> that will be in Java 7.  The <a href="http:&#47;&#47;java.sun.com&#47;features&#47;jdk&#47;7&#47;">JDK</a> currently has a release date of September 2010.</p>
+
+<p>I'm just back from the <a href="http://www.devoxx.com/">Devoxx</a> conference in Antwerp.  An update was given on the <a href="http://openjdk.java.net/projects/coin/">new language changes</a> that will be in Java 7.  The <a href="http://java.sun.com/features/jdk/7/">JDK</a> currently has a release date of September 2010.</p>
 <p>Here are 7 of the new features that have been completed:</p>
+
 <ul>
 <li><del>Language support for collections</del> ( Postponed to Java 8 )</li>
 <li>Automatic Resource Management</li>
@@ -1266,100 +1268,129 @@ comments:
 <li>Underscores in numeric literals</li>
 <li>Strings in switch</li>
 <li>Binary literals</li>
-<li>Simplified Varargs Method Invocation</li><br />
-</ul></p>
-<p>There is a lot more to Java 7 then just these language changes.  I'll be exploring the rest of the release in future posts.  One of the big debates is currently around <a href="http:&#47;&#47;www.jroller.com&#47;scolebourne&#47;entry&#47;closures_in_jdk_7">Closures</a>, which are a separate JSR.</p>
-<h3>Language support for collections</h3></p>
-<p><i>This has been postponed to Java 8!  You could use <a href="http:&#47;&#47;code.joejag.com&#47;2011&#47;a-dsl-for-collections-in-java">my simple alternative</a> until then.</i></p>
+<li>Simplified Varargs Method Invocation</li>
+</ul>
+
+<p>There is a lot more to Java 7 then just these language changes.  I'll be exploring the rest of the release in future posts.  One of the big debates is currently around <a href="http://www.jroller.com/scolebourne/entry/closures_in_jdk_7">Closures</a>, which are a separate JSR.</p>
+
+<h3>Language support for collections</h3>
+<p><i>This has been postponed to Java 8!  You could use <a href="{% post_url /2011-03-04-a-dsl-for-collections-in-java %}">my simple alternative</a> until then.</i></p>
 <p>Java will be getting first class language support for creating collections.  The style change means that collections can be created like they are in Ruby, Perl etc.</p>
 <p>Instead of:</p>
-<pre class="sh_java sh_sourceCode">
-List<String> list = new ArrayList<String>();<br />
-list.add("item");<br />
-String item = list.get(0);</p>
-<p>Set<String> set = new HashSet<String>();<br />
-set.add("item");</p>
-<p>Map<String, Integer> map = new HashMap<String, Integer>();<br />
-map.put("key", 1);<br />
-int value = map.get("key");<br />
-</pre></p>
-<p>You will be able to use:</p>
-<pre class="sh_java sh_sourceCode">
-List<String> list = ["item"];<br />
-String item = list[0];</p>
-<p>Set<String> set = {"item"};</p>
-<p>Map<String, Integer> map = {"key" : 1};<br />
-int value = map["key"];<br />
-</pre></p>
+
+{% highlight java %}
+List<String> list = new ArrayList<String>();
+list.add("item");
+String item = list.get(0);
+
+Set<String> set = new HashSet<String>();
+set.add("item");
+
+Map<String, Integer> map = new HashMap<String, Integer>();
+map.put("key", 1);
+int value = map.get("key");
+{% endhighlight %}
+
+You will be able to use:
+
+{% highlight java %}
+List<String> list = ["item"];
+String item = list[0];
+
+Set<String> set = {"item"};
+
+Map<String, Integer> map = {"key" : 1};
+int value = map["key"];
+{% endhighlight %}
+
 <p>These collections are immutable.</p>
-<h3>Automatic Resource Management</h3></p>
+
+<h3>Automatic Resource Management</h3>
 <p>Some resources in Java need to be closed manually like InputStream, Writers, Sockets, Sql classes.  This language feature allows the try statement itself to declare one of more resources.  These resources are scoped to the try block and are closed automatically.</p>
 <p>This:</p>
-<pre class="sh_java sh_sourceCode">
-BufferedReader br = new BufferedReader(new FileReader(path));<br />
-try {<br />
-   return br.readLine();<br />
-} finally {<br />
-   br.close();<br />
-}<br />
-</pre></p>
+
+{% highlight java %}
+BufferedReader br = new BufferedReader(new FileReader(path));
+try {
+   return br.readLine();
+} finally {
+   br.close();
+}
+{% endhighlight %}
+
 <p>becomes:</p>
-<pre class="sh_java sh_sourceCode">
-try (BufferedReader br = new BufferedReader(new FileReader(path)) {<br />
-   return br.readLine();<br />
-}<br />
-</pre></p>
+
+{% highlight java %}
+try (BufferedReader br = new BufferedReader(new FileReader(path)) {
+   return br.readLine();
+}
+{% endhighlight %}
+
 <p>You can declare more than one resource to close:</p>
-<pre class="sh_java sh_sourceCode">
-try (<br />
-   InputStream in = new FileInputStream(src);<br />
-   OutputStream out = new FileOutputStream(dest))<br />
-{<br />
- &#47;&#47; code<br />
-}<br />
-</pre></p>
+
+{% highlight java %}
+try (
+   InputStream in = new FileInputStream(src);
+   OutputStream out = new FileOutputStream(dest))
+{
+ // code
+}
+{% endhighlight %}
 <p>To support this behaviour all closable classes will be retro-fitted to implement a <i>Closable</i> interface.</p>
-<h3>Improved Type Inference for Generic Instance Creation (diamond)</h3></p>
+
+<h3>Improved Type Inference for Generic Instance Creation (diamond)</h3>
 <p>This is a particular annoyance which is best served with an example:</p>
-<pre class="sh_java sh_sourceCode">
-Map<String, List<String>> anagrams = new HashMap<String, List<String>>();<br />
-</pre></p>
+
+{% highlight java %}
+Map<String, List<String>> anagrams = new HashMap<String, List<String>>();
+{% endhighlight %}
 <p>becomes:</p>
-<pre class="sh_java sh_sourceCode">
-Map<String, List<String>> anagrams = new HashMap<>();<br />
-</pre></p>
+
+{% highlight java %}
+Map<String, List<String>> anagrams = new HashMap<>();
+{% endhighlight %}
 <p>This is called the <i>diamond operator</i>: <> which infers the type from the reference declaration.</p>
-<h3>Underscores in numeric literals</h3></p>
+
+<h3>Underscores in numeric literals</h3>
 <p>Long numbers are hard to read.  You can now split them up using an underscore in ints and longs:</p>
-<pre class="sh_java sh_sourceCode">
-int one_million = 1_000_000;<br />
-</pre></p>
-<h3>Strings in switch</h3></p>
+
+{% highlight java %}
+int one_million = 1_000_000;
+{% endhighlight %}
+
+<h3>Strings in switch</h3>
 <p>Currently you can only use numbers or enums in switch statements.  String has been added as a candidate:</p>
-<pre class="sh_java sh_sourceCode">
-String s = ...<br />
-switch(s) {<br />
- case "quux":<br />
-    processQuux(s);<br />
-    &#47;&#47; fall-through</p>
-<p>  case "foo":<br />
-  case "bar":<br />
-    processFooOrBar(s);<br />
-    break;</p>
-<p>  case "baz":<br />
-     processBaz(s);<br />
-    &#47;&#47; fall-through</p>
-<p>  default:<br />
-    processDefault(s);<br />
-    break;<br />
-}<br />
-</pre></p>
-<h3>Binary literals</h3></p>
+
+{% highlight java %}
+String s = ...
+switch(s) {
+ case "quux":
+    processQuux(s);
+    // fall-through
+
+  case "foo"
+  case "bar":
+    processFooOrBar(s);
+    break;
+
+  case "baz":
+     processBaz(s);
+     // fall-through
+
+  default:
+    processDefault(s);
+    break;
+}
+{% endhighlight %}
+
+<h3>Binary literals</h3>
 <p>Java code, due to its C heritage, has traditionally forced programmers to represent numbers in only decimal, octal, or hexadecimal. </p>
 <p>As quite a few domains are bit orientated, this restriction can introduce errors.  You can now create binary numbers using an <i>0b</i> prefix.</p>
-<pre class="sh_java sh_sourceCode">
-int binary = 0b1001_1001;<br />
-</pre></p>
-<h3>Simplified Varargs Method Invocation</h3></p>
+
+{% highlight java %}
+int binary = 0b1001_1001;
+{% endhighlight %}
+
+<h3>Simplified Varargs Method Invocation</h3>
 <p>When a programmer tries to invoke a *varargs* (variable arity) method with a non-reifiable varargs type, the compiler currently generates an "unsafe operation" warning. JDK 7 moves the warning from the call site to the method declaration.  This will enable API designers to use varargs due to the reduction of warnings reported.</p>
 <p>This one is slightly more involved so you are better off looking at the <a href="http:&#47;&#47;mail.openjdk.java.net&#47;pipermail&#47;coin-dev&#47;2009-March&#47;000217.html">proposal</a>.</p>

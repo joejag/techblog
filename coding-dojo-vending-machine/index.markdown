@@ -21,7 +21,7 @@ comments: []
 <h2>Vending Machine</h2></p>
 <p>The goal of this program is to model a vending machine and the state it must maintain during it's operation. How exactly the actions on the machine are driven is left intentionally vague and is up to the implementor.</p>
 <p>The machine works like all vending machines: it takes money then gives you items. The vending machine accepts money in the form of nickels, dimes, quarters, and paper dollars. You must have at least have 3 primary items that cost $0.65, $1.00, and $1.50. The user may hit a "coin return" button to get back the money they've entered so far. If you put more money in than the item's price, you get change back.</p>
-<h3>Specification</h3></p>
+<h3>Specification</h3>
 <p><b>The valid set of actions on the vending machine are:</b></p>
 <ul>
 <li>NICKEL(0.05), DIME(0.10), QUARTER(0.25), DOLLAR(1.00) - insert money
@@ -40,7 +40,7 @@ comments: []
 <li>available change - # of nickels, dimes, quarters, and dollars available
 <li>currently inserted money<br />
 </ul></p>
-<h3>Example input and output</h3></p>
+<h3>Example input and output</h3>
 <pre class="sh_ruby">
 Example 1: Buy B with exact change<br />
 Q, Q, Q, Q, GET-B<br />

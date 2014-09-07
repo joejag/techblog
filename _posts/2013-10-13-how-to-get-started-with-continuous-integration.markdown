@@ -19,7 +19,7 @@ categories:
 tags: []
 comments: []
 ---
-<p>Recently a friend asked me how they could get started using Continuous Integration (CI). I've written about the theory and practice  behind CI <a href="http:&#47;&#47;code.joejag.com&#47;2009&#47;continuous-integration&#47;">before</a>.</p>
+<p>Recently a friend asked me how they could get started using Continuous Integration (CI). I've written about the theory and practice  behind CI <a href="{% post_url /2009-08-21-continuous-integration %}">before</a>.</p>
 <p>Here is my checklist for getting your application and team going with CI:</p>
 <ol>
 <li> Find the main integration branch in your VCS (trunk, master or an integration branch)

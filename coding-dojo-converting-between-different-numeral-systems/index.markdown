@@ -35,7 +35,7 @@ comments:
 <li>Roman: 1..3499
 <li>Urnfield: 1..29<br />
 </ul></p>
-<h3>Roman</h3></p>
+<h3>Roman</h3>
 <p>Roman numerals are based on seven symbols which can be combined to represent numbers.</p>
 <table>
 <tr>
@@ -64,7 +64,7 @@ comments:
 <td>1000</td></tr><br />
 </table></p>
 <p>Generally, Roman numerals are written in descending order from left to right, and are added sequentially, for example MMVI (2006) is interpreted as 1000 + 1000 + 5 + 1.</p>
-<h3>Urnfield</h3></p>
+<h3>Urnfield</h3>
 <p>Urnfield is a simplistic numeral system used around 1200 BC in central Europe. It uses only 2 characters which are both slashes.</p>
 <table>
 <tr>

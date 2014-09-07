@@ -52,54 +52,73 @@ comments:
     This is exactly why you should switch to Scala :D
 ---
 <p>When writing Java code I often find it laborious to create collections using the <i>java.util.*</i> collection classes.  To avoid this, I've been using a mini-DSL to reduce my collections code.</p>
-<pre class="sh_java sh_sourceCode">
-import static com.joejag.common.collections.Dsl.*;</p>
-<p>&#47;&#47; A list<br />
-List<String> list = list("abc", "def");</p>
-<p>&#47;&#47; A set<br />
-Set<String> set = set("Sleepy", "Sneezy", "Dozy");</p>
-<p>&#47;&#47; A Map<br />
-Map<String, Integer> map = map(entry("Joe", 28), entry("Gerry", 39));<br />
-</pre></p>
+
+{% highlight java %}
+import static com.joejag.common.collections.Dsl.*;
+
+// A list
+List<String> list = list("abc", "def");
+
+// A set
+Set<String> set = set("Sleepy", "Sneezy", "Dozy");
+
+// A Map
+Map<String, Integer> map = map(entry("Joe", 28), entry("Gerry", 39));
+{% endhighlight %}
+
 <p>Here is the underlying code.</p>
-<pre class="sh_java sh_sourceCode">
-package com.joejag.common.collections;</p>
-<p>import java.util.*;</p>
-<p>public class Dsl {<br />
-    public static <T> List<T> list(T... args) {<br />
-        return Arrays.asList(args);<br />
-    }</p>
-<p>    public static <T> Set<T> set(T... args) {<br />
-        Set<T> result = new HashSet<T>(args.length);<br />
-        result.addAll(Arrays.asList(args));<br />
-        return result;<br />
-    }</p>
-<p>    public static <K, V> Map<K, V> map(Entry<? extends K, ? extends V>... entries) {<br />
-        Map<K, V> result = new HashMap<K, V>(entries.length);</p>
-<p>        for (Entry<? extends K, ? extends V> entry : entries)<br />
-            if (entry.value != null)<br />
-                result.put(entry.key, entry.value);</p>
-<p>        return result;<br />
-    }</p>
-<p>    public static <K, V> Entry<K, V> entry(K key, V value) {<br />
-        return new Entry<K, V>(key, value);<br />
-    }</p>
-<p>    public static class Entry<K, V> {<br />
-        K key;<br />
-        V value;</p>
-<p>        public Entry(K key, V value) {<br />
-            this.key = key;<br />
-            this.value = value;<br />
-        }<br />
-    }</p>
-<p>    public static void main(String args[]) {<br />
-        List<String> list = list("abc", "def");<br />
-        System.out.println(list);</p>
-<p>        Set<String> set = set("Sleepy", "Sneezy", "Dozy");<br />
-        System.out.println(set);</p>
-<p>        Map<String, Integer> map = map(entry("Joe", 28), entry("Gerry", 39));<br />
-        System.out.println(map);<br />
-    }<br />
-}<br />
-</pre></p>
+
+{% highlight java %}
+package com.joejag.common.collections;
+
+import java.util.*;
+
+public class Dsl {
+    public static <T> List<T> list(T... args) {
+        return Arrays.asList(args);
+    }
+
+    public static <T> Set<T> set(T... args) {
+        Set<T> result = new HashSet<T>(args.length);
+        result.addAll(Arrays.asList(args));
+        return result;
+    }
+
+    public static <K, V> Map<K, V> map(Entry<? extends K, ? extends V>... entries) {
+        Map<K, V> result = new HashMap<K, V>(entries.length);
+        
+        for (Entry<? extends K, ? extends V> entry : entries)
+            if (entry.value != null)
+                result.put(entry.key, entry.value);
+                
+        return result;
+    }
+
+    public static <K, V> Entry<K, V> entry(K key, V value) {
+        return new Entry<K, V>(key, value);
+    }
+
+    public static class Entry<K, V> {
+        K key;
+        V value;
+        
+        public Entry(K key, V value) {
+            this.key = key;
+            this.value = value;
+        }
+    }
+
+    public static void main(String args[]) {
+        List<String> list = list("abc", "def");
+        System.out.println(list);
+        
+        Set<String> set = set("Sleepy", "Sneezy", "Dozy");
+        System.out.println(set);
+        
+        Map<String, Integer> map = map(entry("Joe", 28), entry("Gerry", 39));
+        System.out.println(map);
+    }
+}
+{% endhighlight %}
+
 <p>I've noticed that the Google Collections project has morphed into <a href="http:&#47;&#47;code.google.com&#47;p&#47;guava-libraries&#47;">Guava</a> which has great reusable code for collections and a lot of other common Java tasks.</p>

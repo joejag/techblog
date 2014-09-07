@@ -69,22 +69,29 @@ comments:
 
     Everyone in Agile talks about testing your software, but there's still not enough talk about verifying our *assumptions* about customer behavior. A&#47;B testing, continuous deployment (with quick rollback) and strong monitoring -- particularly focused on conversion funnels -- can give you a quick way to focus on building software that people will actually use rather than building software that does what you originally envisioned. I still teach and encourage testing, but I want us to test customer behavior and not *just* software behavior.
 
-    If you think this is interesting, there's some discussion (and links to my writing) at http:&#47;&#47;www.dagolden.com&#47;index.php&#47;2116&#47;ooda-vs-technical-debt&#47;
+    If you think this is interesting, there's some discussion (and links to my writing) at http://www.dagolden.com&#47;index.php&#47;2116&#47;ooda-vs-technical-debt&#47;
 ---
-<p>At <a href="https:&#47;&#47;twitter.com&#47;LeanAgileGLA">Lean Agile Glasgow</a> on Wednesday we were discussing a recent event in London where a bunch of agile luminaries got together to discuss <a href="http:&#47;&#47;blog.crisp.se&#47;2013&#47;02&#47;12&#47;henrikkniberg&#47;how-to-build-the-right-thing">"How to build the right thing"</a>.</p>
+<p>At <a href="https://twitter.com&#47;LeanAgileGLA">Lean Agile Glasgow</a> on Wednesday we were discussing a recent event in London where a bunch of agile luminaries got together to discuss <a href="http://blog.crisp.se&#47;2013&#47;02&#47;12&#47;henrikkniberg&#47;how-to-build-the-right-thing">"How to build the right thing"</a>.</p>
 <p>The author of the article starts by saying (emphasis mine):</p>
-<blockquote><p>
+
+<blockquote>
 Agile basically <strong>solved the problem of how to deliver software</strong>. Most any company that applies an agile method and mindset can get working software out the door. Now, <b>the biggest waste in software development seems to be building the wrong product</b>, or the wrong features.<br />
-<small>Henrik Kniberg</small><br />
-</blockquote><br />
-I'm interpreting this as the author saying that we've figured out how to <em>efficiently</em> create software with agile, but we are still working out  how to <em>effectively</em> deliver it.</p>
-<p>Reading over the headline statements on the agile manifesto and focusing on the items on the left you will have an efficient system for developing software. But are they focusing on effectiveness?</p>
-<blockquote><p>Individuals and interactions over processes and tools</blockquote><br />
-<em>Waste reduction by encouraging conversation over heavy process or tools</em></p>
-<blockquote><p>Working software over comprehensive documentation</blockquote><br />
-<em>Waste reduction by building something usable first</em></p>
-<blockquote><p>Customer collaboration over contract negotiation</blockquote><br />
-<em>More effectiveness focused than the others here, though also the least adhered too</em></p>
-<blockquote><p>Responding to change over following a plan</blockquote><br />
-<em>Waste reduction by removing detailed future plans that'll be wrong or unwanted</em></p>
+<small>Henrik Kniberg</small>
+</blockquote>
+
+I'm interpreting this as the author saying that we've figured out how to <em>efficiently</em> create software with agile, but we are still working out  how to <em>effectively</em> deliver it.
+<p>Reading over the headline statements on the agile manifesto and focusing on the items on the left you will have an efficient system for developing software. But are they focusing on effectiveness?
+
+<blockquote>Individuals and interactions over processes and tools</blockquote>
+<em>Waste reduction by encouraging conversation over heavy process or tools</em>
+
+<blockquote>Working software over comprehensive documentation</blockquote>
+<em>Waste reduction by building something usable first</em>
+
+<blockquote>Customer collaboration over contract negotiation</blockquote>
+<em>More effectiveness focused than the others here, though also the least adhered too</em>
+
+<blockquote>Responding to change over following a plan</blockquote>
+<em>Waste reduction by removing detailed future plans that'll be wrong or unwanted</em>
+
 <p>Seeing three out of four items as efficiency focused is what leads me to think that agile is more about efficiently than effectiveness. The hope is that by being more effiecient you get more time building valuable and effective software, rather than just doing the wrong thing righter. The area of building the right thing is where we should now focus our efforts.</p>

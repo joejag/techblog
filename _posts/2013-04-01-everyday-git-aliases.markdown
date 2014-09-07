@@ -85,58 +85,68 @@ comments:
   content: I like the "git standup" alias. But on Mondays it should switch to "what
     the hell did I do on Friday again?". :)
 ---
+
 <p>Git gives you as much flexibility in how you construct your VCS workflow as it does for the commands you use on your local repo. In your gitconfig file you can add alises for your favourite commands, in this article I'll talk about mine. You can see my gitconfig on <a href="https:&#47;&#47;github.com&#47;joejag&#47;dotfiles&#47;blob&#47;master&#47;git&#47;gitconfig">github</a>.</p>
-<h3>git standup</h3><br />
+
+<h3>git standup</h3>
 <em>alias for git log &ndash;&ndash;since yesterday &ndash;&ndash;author joe</em></p>
 <p>Just about to head to a standup but you can't remember everything that you did yesterday? This command will come to your rescue. It only lists what you did in the last 24 hours.</p>
-<pre class="sh_sh sh_sourceCode">
-3400455 - fixed the whizzbang (Mon, 1 Apr 2013 13:57:37 +0100) <Joe Wright><br />
-5dae0a0 - whizzbang feature (Mon, 1 Apr 2013 13:57:32 +0100) <Joe Wright><br />
-</pre></p>
-<h3>git purr</h3></p>
+
+{% highlight bash %}
+3400455 - fixed the whizzbang (Mon, 1 Apr 2013 13:57:37 +0100) <Joe Wright>
+5dae0a0 - whizzbang feature (Mon, 1 Apr 2013 13:57:32 +0100) <Joe Wright>
+{% endhighlight %}
+
+<h3>git purr</h3>
 <p><em>alias for git pull &ndash;&ndash;rebase</em></p>
 <p>In Git you have public and private branches, public branches are the ones on github (or your own git host), private branches are in your local git repo and are setup to be tracking or topic. A tracking branch is linked to a public branch and a topic is only in your local git repo.</p>
 <p>You have two options when you want to integrate changes between branches, either you <strong>merge</strong> or <strong>rebase</strong>. By default when you do a <strong>pull</strong> on a tracked branch it performs a <strong>fetch</strong> then a <strong>merge</strong>. If you've made changes locally and someone else has pushed changes to your git host then git will automatically merge these together with a merge commit.</p>
-<pre class="sh_sh sh_sourceCode">
-4ffe733 - Merge branch 'development' of github.com:YourCompany&#47;project into master<br />
-</pre></p>
+
+{% highlight bash %}
+4ffe733 - Merge branch 'development' of github.com:YourCompany/project into master
+{% endhighlight %}
+
 <p>On an active project with other colleagues using <strong>pull</strong> will generate a load of these noisy commits in your projects history. I only like merge commits to be in the history when a topic branch has been reintegrated. Tracking branches should have a linear history.</p>
 <p>When you do a <strong>git pull &ndash;&ndash;rebase</strong>, git fetches the changes from your remote repo and then perform a rebase rather than the default merge. A rebase resets the HEAD of your local branch to be the same as the remote HEAD, then replays your local commits back into repo. This means you don't get any noisy merge messages in your history. As well as giving a linear history, this also helps when using <strong>bisect</strong>.</p>
-<h3>git st</h3><br />
+
+<h3>git st</h3>
 <em>alias for git status -sb</em></p>
 <p>Git gives a verbose output when you perform a <strong>status</strong> which is excellent when you are getting started with git. As you become used to the output you want a shorter version. The output of this alias shows a single letter that represents the change type and reports how far ahead of the remote branch you are.</p>
-<pre class="sh_sh sh_sourceCode">
-## master...origin&#47;master [ahead 2]<br />
-A  g<br />
-D  gitignore<br />
-</pre></p>
-<h3>git ready</h3><br />
+{% highlight bash %}
+## master...origin&#47;master [ahead 2]
+A  g
+D  gitignore
+{% endhighlight %}
+
+<h3>git ready</h3>
 <em>alias for git rebase -i @{u}</em></p>
 <p>Once you've committed a few local changes you'll want to share them with your team by pushing to your git host. Before I push I always run the <strong>git ready</strong> alias to see what's going to be pushed so I can reword commit messages and squash related commits together. <strong>git ready</strong> performs an interactive rebase on your unpushed commits.</p>
 <p>Let's say I've pushed two commits that are related to a new feature and I have another where I made a spelling mistake in the commit message. When I run <strong>git ready</strong> I get dropped into vim with this input.</p>
-<pre class="sh_sh sh_sourceCode">
-pick 7f06d36 whizzbang feature - adding fizzbuzz<br />
-pick ad544d0 whizzbang feature - minor refactoring to fizzbuzz<br />
-pick de3083a spelling mizzztake<br />
-</pre></p>
+
+{% highlight bash %}
+pick 7f06d36 whizzbang feature - adding fizzbuzz
+pick ad544d0 whizzbang feature - minor refactoring to fizzbuzz
+pick de3083a spelling mizzztake
+{% endhighlight %}
 <p>I want to squash the two whizzbang feature commits together. So I change <strong>pick</strong> to say <strong>s</strong> to squash the two together into a single commit. I also want to reword the commit with the spelling mistake. To do this I make the file look like:</p>
-<pre class="sh_sh sh_sourceCode">
-pick 7f06d36 whizzbang feature - adding fizzbuzz<br />
-s ad544d0 whizzbang feature - minor refactoring to fizzbuzz<br />
+{% highlight bash %}
+pick 7f06d36 whizzbang feature - adding fizzbuzz
+s ad544d0 whizzbang feature - minor refactoring to fizzbuzz
 r de3083a spelling mizzztake<br />
-</pre></p>
+{% endhighlight %}
 <p>This gives me two new commit messages to edit, which I update. Now when I push the remote repo host receives two commits</p>
-<pre class="sh_sh sh_sourceCode">
-3400455 - spelling mistake<br />
-5dae0a0 - whizzbang feature<br />
-</pre></p>
-<h3>git lg</h3><br />
+{% highlight bash %}
+3400455 - spelling mistake
+5dae0a0 - whizzbang feature
+{% endhighlight %}
+
+<h3>git lg</h3>
 <em>alias for git log &ndash;&ndash;pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'</em></p>
 <p>When I'm viewing history I just want to see the SHA, the commit message, who made the commit and how long ago. This custom log output gives me:</p>
-<pre class="sh_sh sh_sourceCode">
-3400455 - spelling mistake (20 minutes ago) <Joe Wright><br />
-5dae0a0 - whizzbang feature (28 minutes ago) <Joe Wright><br />
-efaea80 - Removing trailing space on save (4 days ago) <Another Guy><br />
-c351700 - Copying to system clipboard in vim (5 days ago) <Joe Wright><br />
-</pre></p>
+{% highlight bash %}
+3400455 - spelling mistake (20 minutes ago) <Joe Wright>
+5dae0a0 - whizzbang feature (28 minutes ago) <Joe Wright>
+efaea80 - Removing trailing space on save (4 days ago) <Another Guy>
+c351700 - Copying to system clipboard in vim (5 days ago) <Joe Wright>
+{% endhighlight %}
 <p>I'd be interested to hear about your favourite git aliases too.</p>

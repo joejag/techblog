@@ -20,7 +20,7 @@ comments: []
 ---
 <h2>Bowling Scores</h2></p>
 <p>The goal of this program is to model a game of bowling. Given a series of input the program should output the players final score.</p>
-<h3>Specification&#47;Rules of Bowling</h3></p>
+<h3>Specification&#47;Rules of Bowling</h3>
 <p>Each game, or <b>line</b> of bowling, includes ten turns, or <b>frames</b> for the bowler.</p>
 <p>In each frame, the bowler gets up to two tries to knock down all the pins.</p>
 <p>If in two tries, he fails to knock them all down, his score for that frame is the total number of pins knocked down in his two tries.</p>
@@ -34,7 +34,7 @@ comments: []
 <li>Correct number of rolls and frames.
 <li>We will not provide scores for intermediate frames.<br />
 </ul></p>
-<h3>Example input and output</h3></p>
+<h3>Example input and output</h3>
 <pre class="sh_ruby">
 Example 1: Gutter balls (all zero)<br />
 [0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]<br />
