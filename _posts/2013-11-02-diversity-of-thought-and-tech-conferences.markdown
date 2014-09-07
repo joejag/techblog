@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: Diversity of thought and tech conferences
+title: Diversity of format at tech conferences
 author:
   display_name: Joe Wright
   login: joejag

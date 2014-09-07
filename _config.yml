@@ -12,3 +12,7 @@ markdown: kramdown
 permalink: /:year/:title.html
 
 port: 4001
+
+ftp_host: 'joejag.com'
+ftp_dir: '/public_html/code'
+ftp_passive: false
