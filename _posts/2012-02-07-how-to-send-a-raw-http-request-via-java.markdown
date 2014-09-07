@@ -83,11 +83,11 @@ import java.util.List;</p>
 <p>        return contents;<br />
     }<br />
 }<br />
-<&#47;pre></p>
+</pre></p>
 <p>For example.  Running this class with the parameters: "google.co.uk &#47;path&#47;to&#47;stored&#47;file" with the stored file being just:</p>
 <pre class="sh_sh sh_sourceCode">
 GET &#47;intl&#47;en&#47;policies&#47;privacy&#47; HTTP&#47;1.1<br />
-<&#47;pre></p>
+</pre></p>
 <p>Will give you this output:</p>
 <pre class="sh_sh sh_sourceCode">
  * Sending<br />
@@ -106,5 +106,5 @@ X-XSS-Protection: 1; mode=block<br />
 Transfer-Encoding: chunked</p>
 <p>&#47;&#47; Body content of web page<br />
 <!DOCTYPE html><br />
-<&#47;pre></p>
-<p>For capturing payloads I recommend using <a href="http:&#47;&#47;afflib.org&#47;software&#47;tcpflow">tcpflow<&#47;a> running on the target host as "tcpflow port 80"</p>
+</pre></p>
+<p>For capturing payloads I recommend using <a href="http:&#47;&#47;afflib.org&#47;software&#47;tcpflow">tcpflow</a> running on the target host as "tcpflow port 80"</p>

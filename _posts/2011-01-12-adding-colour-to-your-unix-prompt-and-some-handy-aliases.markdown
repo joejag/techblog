@@ -35,6 +35,6 @@ PS1='[e[0;32m]u[e[m] [e[1;34m]w[e[m] [e[1;32m]$[e[m] [e[1;37m]'</p>
 alias rshare="ruby -rubygems -e "['thin', 'rack', 'socket'].each {|file| require file };"<br />
 " Thin::Server.start(IPSocket.getaddress(Socket.gethostname), 7777) {"<br />
 " use Rack::CommonLogger; run Rack::Directory.new(Dir.pwd) }""<br />
-<&#47;pre></p>
+</pre></p>
 <p>Example in &#47;bin:<br />
 <img src="http:&#47;&#47;localhost&#47;wordpress&#47;wp-content&#47;uploads&#47;2011&#47;01&#47;ps11.png" alt="ps1" title="ps1" width="364" height="78" class="alignnone size-full wp-image-410" &#47;></p>

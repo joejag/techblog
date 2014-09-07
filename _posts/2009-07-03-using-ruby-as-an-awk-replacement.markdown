@@ -65,11 +65,11 @@ comments:
 <p>Someone at work asked if you could use Ruby like AWK.&nbsp; I did a little digging and found that you can.</p>
 <pre class="sh_sh">
 cat file | ruby -n -a -e 'puts "#{$F[0] $F[1]}"'<br />
-<&#47;pre></p>
+</pre></p>
 <p>'-n' makes the Ruby iterate over all lines successively assigning them to $_<br />
 '-a' makes Ruby split $_ into its parts assigning the result to $F which is an array of strings<br />
 '-e' means that what follows is code to be executed.<br />
 '-F' specifies the column separator</p>
 <p>
 I performed a speed comparison on some different size files and operations.  For files under 500kb lines Ruby has comparable performance to AWK.  For anything larger then Ruby (1.8.6) is at best twice as slow.  Though I wouldn't expect a general purpose language to outperform a specialist tool.<br />
-<&#47;p></p>
+</p></p>

@@ -38,22 +38,25 @@ comments:
     keyboard as a mouse.
 ---
 <p>At work we have a big TV screen with a build status being displayed. The desktop support team had a large lead time on changing the settings to stop it locking the machine every 5 minutes. This was the temporary workaround.</p>
-<p>The <strong>java.awt.Robot<&#47;strong> has a few other interesting methods like taking screenshots, getting the colour under your cursor and clicking the mouse. </p>
+<p>The <strong>java.awt.Robot</strong> has a few other interesting methods like taking screenshots, getting the colour under your cursor and clicking the mouse. </p>
 <p>This code has no dependencies.</p>
-<pre class="sh_java sh_sourceCode">
-import java.awt.Robot;<br />
-import java.util.Random;</p>
-<p>public class MouseMover {</p>
-<p>    public static final int FIVE_SECONDS = 5000;<br />
-    public static final int MAX_Y = 400;<br />
-    public static final int MAX_X = 400;</p>
-<p>    public static void main(String... args) throws Exception {<br />
-        Robot robot = new Robot();<br />
-        Random random = new Random();<br />
-        while (true) {<br />
-            robot.mouseMove(random.nextInt(MAX_X), random.nextInt(MAX_Y));<br />
-            Thread.sleep(FIVE_SECONDS);<br />
-        }<br />
-    }<br />
-}<br />
-<&#47;pre></p>
+
+{% highlight java %}
+import java.awt.Robot;
+import java.util.Random;
+
+public class MouseMover {
+    public static final int FIVE_SECONDS = 5000;
+    public static final int MAX_Y = 400;
+    public static final int MAX_X = 400;
+    
+    public static void main(String... args) throws Exception {
+        Robot robot = new Robot();
+        Random random = new Random();
+        while (true) {
+            robot.mouseMove(random.nextInt(MAX_X), random.nextInt(MAX_Y));
+            Thread.sleep(FIVE_SECONDS);
+        }
+    }
+}
+{% endhighlight %}

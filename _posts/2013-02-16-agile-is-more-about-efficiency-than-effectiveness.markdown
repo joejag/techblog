@@ -71,20 +71,20 @@ comments:
 
     If you think this is interesting, there's some discussion (and links to my writing) at http:&#47;&#47;www.dagolden.com&#47;index.php&#47;2116&#47;ooda-vs-technical-debt&#47;
 ---
-<p>At <a href="https:&#47;&#47;twitter.com&#47;LeanAgileGLA">Lean Agile Glasgow<&#47;a> on Wednesday we were discussing a recent event in London where a bunch of agile luminaries got together to discuss <a href="http:&#47;&#47;blog.crisp.se&#47;2013&#47;02&#47;12&#47;henrikkniberg&#47;how-to-build-the-right-thing">"How to build the right thing"<&#47;a>.</p>
+<p>At <a href="https:&#47;&#47;twitter.com&#47;LeanAgileGLA">Lean Agile Glasgow</a> on Wednesday we were discussing a recent event in London where a bunch of agile luminaries got together to discuss <a href="http:&#47;&#47;blog.crisp.se&#47;2013&#47;02&#47;12&#47;henrikkniberg&#47;how-to-build-the-right-thing">"How to build the right thing"</a>.</p>
 <p>The author of the article starts by saying (emphasis mine):</p>
 <blockquote><p>
-Agile basically <strong>solved the problem of how to deliver software<&#47;strong>. Most any company that applies an agile method and mindset can get working software out the door. Now, <b>the biggest waste in software development seems to be building the wrong product<&#47;b>, or the wrong features.<br />
-<small>Henrik Kniberg<&#47;small><br />
-<&#47;blockquote><br />
-I'm interpreting this as the author saying that we've figured out how to <em>efficiently<&#47;em> create software with agile, but we are still working out  how to <em>effectively<&#47;em> deliver it.</p>
+Agile basically <strong>solved the problem of how to deliver software</strong>. Most any company that applies an agile method and mindset can get working software out the door. Now, <b>the biggest waste in software development seems to be building the wrong product</b>, or the wrong features.<br />
+<small>Henrik Kniberg</small><br />
+</blockquote><br />
+I'm interpreting this as the author saying that we've figured out how to <em>efficiently</em> create software with agile, but we are still working out  how to <em>effectively</em> deliver it.</p>
 <p>Reading over the headline statements on the agile manifesto and focusing on the items on the left you will have an efficient system for developing software. But are they focusing on effectiveness?</p>
-<blockquote><p>Individuals and interactions over processes and tools<&#47;blockquote><br />
-<em>Waste reduction by encouraging conversation over heavy process or tools<&#47;em></p>
-<blockquote><p>Working software over comprehensive documentation<&#47;blockquote><br />
-<em>Waste reduction by building something usable first<&#47;em></p>
-<blockquote><p>Customer collaboration over contract negotiation<&#47;blockquote><br />
-<em>More effectiveness focused than the others here, though also the least adhered too<&#47;em></p>
-<blockquote><p>Responding to change over following a plan<&#47;blockquote><br />
-<em>Waste reduction by removing detailed future plans that'll be wrong or unwanted<&#47;em></p>
+<blockquote><p>Individuals and interactions over processes and tools</blockquote><br />
+<em>Waste reduction by encouraging conversation over heavy process or tools</em></p>
+<blockquote><p>Working software over comprehensive documentation</blockquote><br />
+<em>Waste reduction by building something usable first</em></p>
+<blockquote><p>Customer collaboration over contract negotiation</blockquote><br />
+<em>More effectiveness focused than the others here, though also the least adhered too</em></p>
+<blockquote><p>Responding to change over following a plan</blockquote><br />
+<em>Waste reduction by removing detailed future plans that'll be wrong or unwanted</em></p>
 <p>Seeing three out of four items as efficiency focused is what leads me to think that agile is more about efficiently than effectiveness. The hope is that by being more effiecient you get more time building valuable and effective software, rather than just doing the wrong thing righter. The area of building the right thing is where we should now focus our efforts.</p>

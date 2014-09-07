@@ -91,21 +91,30 @@ comments:
 <p>Conference organisers have tried alternatives like unconferences, lightning talks or moving the whole conference to a resort. All quite interesting, but still not resolving the problem of creating a conference that engages the attendee.</p>
 <p>Recently I attended a political conference. Political conferences also have sponsors, birds of a feather and keynotes. But they spend the majority of the day debating where they want to take their community next. When there is a diversity of opinion on an issue this creates an electrifying atmosphere, unlike any I've experienced elsewhere.</p>
 <p>There is constant debate in our communities. Whether it's what Ruby testing framework to use this week or whether it's sacrificing another sacred cow of Agile. Instead of reflecting this debate we have one-sided conferences which don't express the spectrum of opinion on the latest issues.</p>
-<h2>A debating format<&#47;h2></p>
+
+<h2>A debating format</h2>
+
 <p>I would like to suggest that for part of a conference we use a debating format.</p>
+
 <p>Conferences during the CFP ask for topics to debate. From this list a few key proposals will be chosen on subjects like "Are estimates harmful?". A champion must be chosen for both sides of the issue, followed by a second person to give additional perspective.</p>
+
 <p>Given a 45 minute session:</p>
+
 <ul>
-<li>The announcer introduces the topic and asks the room what their current voting intention of the topic is
-<li>The champion for the subject has 7 minutes to make their point
-<li>The champion against the subject has 7 minutes to make their point
-<li>The seconder for the subject has 5 minutes
-<li>The seconder against the subject has 5 minutes
-<li>The champion for is given 3 minutes to sum up and respond
-<li>The champion against is given 3 minutes to sum up and respond
-<li>The announcer asks the audience to vote again and announces the outcome of the vote<br />
-<&#47;ul></p>
+<li>The announcer introduces the topic and asks the room what their current voting intention of the topic is</li>
+<li>The champion for the subject has 7 minutes to make their point</li>
+<li>The champion against the subject has 7 minutes to make their point</li>
+<li>The seconder for the subject has 5 minutes</li>
+<li>The seconder against the subject has 5 minutes</li>
+<li>The champion for is given 3 minutes to sum up and respond</li>
+<li>The champion against is given 3 minutes to sum up and respond</li>
+<li>The announcer asks the audience to vote again and announces the outcome of the vote</li>
+</ul>
+
 <p>Feel free to scale up or down the number of speakers and time allotted to them.</p>
+
 <p>These debates coould be encouraged to happen spontaneously if for example the keynote speaker says something controversial.</p>
-<h2>So what do I want?<&#47;h2></p>
+
+<h2>So what do I want?</h2>
+
 <p>I still think that we can enjoy and learn from the traditional classroom conference format. But I think we are rather lazy in the way that we rely on it so heavily. Let's get political.</p>

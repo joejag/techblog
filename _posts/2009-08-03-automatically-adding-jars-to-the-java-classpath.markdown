@@ -48,8 +48,8 @@ comments:
   content: Yay, a tech blog!
 ---
 <p>When you use the Java classpath (pre java 1.6) you have to manually list each jar on your classpath such as:</p>
-<pre class="sh_sh">java -cp lib&#47;database.jar:lib&#47;commons.jar:&#47;lib&#47;log.jar com.joejag.Main<&#47;pre></p>
+<pre class="sh_sh">java -cp lib&#47;database.jar:lib&#47;commons.jar:&#47;lib&#47;log.jar com.joejag.Main</pre></p>
 <p>On Java 1.6 a little known feature is that you can now use wildcards, so the above command becomes:</p>
-<pre class="sh_sh">java -cp lib&#47;*.jar com.joejag.Main<&#47;pre></p>
+<pre class="sh_sh">java -cp lib&#47;*.jar com.joejag.Main</pre></p>
 <p>I still have to use an earlier version of Java for some applications I handle.  To save having to list all the jars manually I use the following bash script which allows you to automatically list all the jars in a directory:</p>
-<pre class="sh_sh">java -cp `find lib -name *.jar -exec printf :{} ';'` com.joejag.Main<&#47;pre></p>
+<pre class="sh_sh">java -cp `find lib -name *.jar -exec printf :{} ';'` com.joejag.Main</pre></p>

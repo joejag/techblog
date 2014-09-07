@@ -20,7 +20,7 @@ tags: []
 comments: []
 ---
 <p>Occasionally you get MP3s which have unconventional tags.  I usually get this problem with compilation albums and it's a bit dull to rename them in iTunes.</p>
-<p>There's a ruby gem which let's you easily edit id3 tags called '<a href="http:&#47;&#47;ruby-mp3info.rubyforge.org&#47;">mp3info<&#47;a>'.</p>
+<p>There's a ruby gem which let's you easily edit id3 tags called '<a href="http:&#47;&#47;ruby-mp3info.rubyforge.org&#47;">mp3info</a>'.</p>
 <p>Here is a script to get you started:</p>
 <pre class="sh_ruby">
 require "mp3info"</p>
@@ -37,4 +37,4 @@ Dir.entries(dir).each do |file|<br />
       mp3.tag.artist = mp3.tag.artist + ' with my change'<br />
    end<br />
 end<br />
-<&#47;pre></p>
+</pre></p>

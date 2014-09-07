@@ -19,14 +19,14 @@ categories:
 tags: []
 comments: []
 ---
-<p>While at a local <a href="http:&#47;&#47;coderdojo.com&#47;">CoderDojo<&#47;a> helping kids age 10-18 learn to program, I was asked how they could upload their work onto the Internet to show their parents. In this case it was html pages with css and images.</p>
-<p>Assuming you already have a <a href="https:&#47;&#47;www.dropbox.com&#47;home">Dropbox<&#47;a> account:</p>
+<p>While at a local <a href="http:&#47;&#47;coderdojo.com&#47;">CoderDojo</a> helping kids age 10-18 learn to program, I was asked how they could upload their work onto the Internet to show their parents. In this case it was html pages with css and images.</p>
+<p>Assuming you already have a <a href="https:&#47;&#47;www.dropbox.com&#47;home">Dropbox</a> account:</p>
 <ol>
-<li>Make a folder under your Public folder on Dropbox<&#47;li>
-<li>Copy your web site files there<&#47;li>
-<li>Log in to your Dropbox account online, navigate to the folder under Public<&#47;li>
-<li>Find your starting html page (probably index.htm) in the Dropbox UI<&#47;li>
-<li>Right click on the file and select "Copy Public Link"<&#47;li>
-<li>Check out the link, share it with your friends<&#47;li><br />
-<&#47;ol></p>
+<li>Make a folder under your Public folder on Dropbox</li>
+<li>Copy your web site files there</li>
+<li>Log in to your Dropbox account online, navigate to the folder under Public</li>
+<li>Find your starting html page (probably index.htm) in the Dropbox UI</li>
+<li>Right click on the file and select "Copy Public Link"</li>
+<li>Check out the link, share it with your friends</li><br />
+</ol></p>
 <p>Happy coding!</p>

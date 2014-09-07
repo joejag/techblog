@@ -26,9 +26,9 @@ comments:
   date_gmt: '2011-09-09 10:32:55 +0100'
   content: Thanks for that, I am using Ruby to read an Excel spreadsheet...
 ---
-<p>If you work in the finance domain you are often confronted with data in spreadsheets.  I've used a number of ways to read spreadsheets before like Scriptom (Groovy) or POM (Java).  Ruby comes with a windows specific OLE bridge which allows you to use COM to communicate with a number of different MS applications.  The pickaxe has <a href="http:&#47;&#47;www.rubycentral.com&#47;pickaxe&#47;win32.html">more details<&#47;a>.</p>
+<p>If you work in the finance domain you are often confronted with data in spreadsheets.  I've used a number of ways to read spreadsheets before like Scriptom (Groovy) or POM (Java).  Ruby comes with a windows specific OLE bridge which allows you to use COM to communicate with a number of different MS applications.  The pickaxe has <a href="http:&#47;&#47;www.rubycentral.com&#47;pickaxe&#47;win32.html">more details</a>.</p>
 <p>Here is a 4 line working example of opening an Excel document, choosing a worksheet then printing the values of a range:</p>
 <pre class="sh_ruby">require 'win32ole'<br />
 excel = WIN32OLE::new('excel.Application')<br />
 sheet = excel.Workbooks.Open('c:excel.xls').Worksheets('worksheet')<br />
-sheet.Range('A1:A3').columns.each { |col| col.cells.each { |cell| puts cell['Value'] } }<&#47;pre></p>
+sheet.Range('A1:A3').columns.each { |col| col.cells.each { |cell| puts cell['Value'] } }</pre></p>

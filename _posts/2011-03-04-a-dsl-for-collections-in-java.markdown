@@ -51,7 +51,7 @@ comments:
 
     This is exactly why you should switch to Scala :D
 ---
-<p>When writing Java code I often find it laborious to create collections using the <i>java.util.*<&#47;i> collection classes.  To avoid this, I've been using a mini-DSL to reduce my collections code.</p>
+<p>When writing Java code I often find it laborious to create collections using the <i>java.util.*</i> collection classes.  To avoid this, I've been using a mini-DSL to reduce my collections code.</p>
 <pre class="sh_java sh_sourceCode">
 import static com.joejag.common.collections.Dsl.*;</p>
 <p>&#47;&#47; A list<br />
@@ -60,7 +60,7 @@ List<String> list = list("abc", "def");</p>
 Set<String> set = set("Sleepy", "Sneezy", "Dozy");</p>
 <p>&#47;&#47; A Map<br />
 Map<String, Integer> map = map(entry("Joe", 28), entry("Gerry", 39));<br />
-<&#47;pre></p>
+</pre></p>
 <p>Here is the underlying code.</p>
 <pre class="sh_java sh_sourceCode">
 package com.joejag.common.collections;</p>
@@ -101,5 +101,5 @@ package com.joejag.common.collections;</p>
         System.out.println(map);<br />
     }<br />
 }<br />
-<&#47;pre></p>
-<p>I've noticed that the Google Collections project has morphed into <a href="http:&#47;&#47;code.google.com&#47;p&#47;guava-libraries&#47;">Guava<&#47;a> which has great reusable code for collections and a lot of other common Java tasks.</p>
+</pre></p>
+<p>I've noticed that the Google Collections project has morphed into <a href="http:&#47;&#47;code.google.com&#47;p&#47;guava-libraries&#47;">Guava</a> which has great reusable code for collections and a lot of other common Java tasks.</p>
