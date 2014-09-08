@@ -89,7 +89,7 @@ comments:
 <p>Git gives you as much flexibility in how you construct your VCS workflow as it does for the commands you use on your local repo. In your gitconfig file you can add alises for your favourite commands, in this article I'll talk about mine. You can see my gitconfig on <a href="https://github.com/joejag/dotfiles/blob/master/git/gitconfig">github</a>.</p>
 
 <h3>git standup</h3>
-<em>alias for git log &ndash;&ndash;since yesterday &ndash;&ndash;author joe</em></p>
+<em>alias for git log &ndash;&ndash;since yesterday &ndash;&ndash;author joe</em>
 <p>Just about to head to a standup but you can't remember everything that you did yesterday? This command will come to your rescue. It only lists what you did in the last 24 hours.</p>
 
 {% highlight bash %}
@@ -98,7 +98,7 @@ comments:
 {% endhighlight %}
 
 <h3>git purr</h3>
-<p><em>alias for git pull &ndash;&ndash;rebase</em></p>
+<p><em>alias for git pull &ndash;&ndash;rebase</em>
 <p>In Git you have public and private branches, public branches are the ones on github (or your own git host), private branches are in your local git repo and are setup to be tracking or topic. A tracking branch is linked to a public branch and a topic is only in your local git repo.</p>
 <p>You have two options when you want to integrate changes between branches, either you <strong>merge</strong> or <strong>rebase</strong>. By default when you do a <strong>pull</strong> on a tracked branch it performs a <strong>fetch</strong> then a <strong>merge</strong>. If you've made changes locally and someone else has pushed changes to your git host then git will automatically merge these together with a merge commit.</p>
 
@@ -110,7 +110,7 @@ comments:
 <p>When you do a <strong>git pull &ndash;&ndash;rebase</strong>, git fetches the changes from your remote repo and then perform a rebase rather than the default merge. A rebase resets the HEAD of your local branch to be the same as the remote HEAD, then replays your local commits back into repo. This means you don't get any noisy merge messages in your history. As well as giving a linear history, this also helps when using <strong>bisect</strong>.</p>
 
 <h3>git st</h3>
-<em>alias for git status -sb</em></p>
+<em>alias for git status -sb</em>
 <p>Git gives a verbose output when you perform a <strong>status</strong> which is excellent when you are getting started with git. As you become used to the output you want a shorter version. The output of this alias shows a single letter that represents the change type and reports how far ahead of the remote branch you are.</p>
 {% highlight bash %}
 ## master...origin/master [ahead 2]
@@ -119,7 +119,7 @@ D  gitignore
 {% endhighlight %}
 
 <h3>git ready</h3>
-<em>alias for git rebase -i @{u}</em></p>
+<em>alias for git rebase -i @{u}</em>
 <p>Once you've committed a few local changes you'll want to share them with your team by pushing to your git host. Before I push I always run the <strong>git ready</strong> alias to see what's going to be pushed so I can reword commit messages and squash related commits together. <strong>git ready</strong> performs an interactive rebase on your unpushed commits.</p>
 <p>Let's say I've pushed two commits that are related to a new feature and I have another where I made a spelling mistake in the commit message. When I run <strong>git ready</strong> I get dropped into vim with this input.</p>
 
@@ -141,7 +141,7 @@ r de3083a spelling mizzztake<br />
 {% endhighlight %}
 
 <h3>git lg</h3>
-<em>alias for git log &ndash;&ndash;pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'</em></p>
+<em>alias for git log &ndash;&ndash;pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'</em>
 <p>When I'm viewing history I just want to see the SHA, the commit message, who made the commit and how long ago. This custom log output gives me:</p>
 {% highlight bash %}
 3400455 - spelling mistake (20 minutes ago) <Joe Wright>
