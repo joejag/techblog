@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Choose one: Feature Toggles or Authorisation'
+title: 'Choose one: Feature Toggles vs Authorisation'
 ---
 
 Last week I was invited to two meetings on the same day. 
