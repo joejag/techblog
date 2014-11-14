@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Why you want to use ZSH as your shell
+title: My favourite Zsh features
 ---
 
-ZSH has seen wide adoption by developers looking to improve their interactive shell experience. I'm rather late to this party, but I'd like you to join too.
+Zsh has seen wide adoption by developers looking to improve their interactive shell experience. I'm rather late to this party, but I'd like you to join too.
 
 I started cultivating a [bash profile](https://github.com/joejag/dotfiles) ever since I first logged into a shell. I’ve collected tab completions, aliases and functions that help get repetitive tasks done quick. When Zsh started to become popular the blogs and comments all focused on features I aleady had configured in my bash profile. I remained unconvinced.
 
