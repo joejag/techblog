@@ -5,7 +5,7 @@ title: My favourite Zsh features
 
 Zsh has seen wide adoption by developers looking to improve their interactive shell experience. I'm rather late to this party, but I'd like you to join too.
 
-I started cultivating a [bash profile](https://github.com/joejag/dotfiles) ever since I first logged into a shell. I’ve collected tab completions, aliases and functions that help get repetitive tasks done quick. When Zsh started to become popular the blogs and comments all focused on features I aleady had configured in my bash profile. I remained unconvinced.
+I started cultivating a [bash profile](https://github.com/joejag/dotfiles) ever since I first logged into a shell. I’ve collected tab completions, aliases and functions that help get repetitive tasks done quick. When Zsh started to become popular the blogs and comments all focused on features I already had configured in my bash profile. I remained unconvinced.
 
 Then I read about [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh). A project that assembles good defaults for Zsh which has significant traction online. Being a late adopter, I’m writing this in a way that would of convinced me to switch shells immediately.
 
@@ -62,7 +62,7 @@ In Bash each shell has it's own history. Zshs shares the command history with al
 
 ## Expand environment variables
 
-We have envivornment variables available in our shells. Sometimes we want to manipulate the value of these variables or just visually inspect them
+We have environment variables available in our shells. Sometimes we want to manipulate the value of these variables or just visually inspect them
 
 <img width="100%" src="{{ site.url }}/assets/2014/path_expansion_before.jpg" />
 
@@ -77,7 +77,7 @@ I usually kill commands after inspecting them using __ps__ or if I'm confident w
 
 <img width="100%" src="{{ site.url }}/assets/2014/kill_before.jpg" />
 
-Hit tab and it will give you a keyboard navigatble list of commands that start with the letters you typed after __kill__
+Hit tab and it will give you a keyboard navigable list of commands that start with the letters you typed after __kill__
 
 <img width="100%" src="{{ site.url }}/assets/2014/kill_after.jpg" />
 
@@ -93,7 +93,7 @@ Type the start of the switch then press &lt;TAB&gt;.
 
 This lists the switch name with inline documentation. You have the option to use keyboard navigation too.
 
-This isn't constrained to just the __ls__ command. It works on a baffingly large amount of commands like __netstat__, __git__ and __chmod__.
+This isn't constrained to just the __ls__ command. It works on a bafflingly large amount of commands like __netstat__, __git__ and __chmod__.
 
 ## Help with Git
 
@@ -110,11 +110,11 @@ You can see the branch name I'm on and that little lightning bolt is telling me 
 
 ## Your last command failed
 
-You may have noticed the green arrow at the start of my prompt in the screenshots. This indicates that my last command completed succssfully.
+You may have noticed the green arrow at the start of my prompt in the screenshots. This indicates that my last command completed successfully.
 
 <img width="100%" src="{{ site.url }}/assets/2014/fail_prompt.jpg" />
 
-If my command fails the prompt turns red until another command is succesful.
+If my command fails the prompt turns red until another command is successful.
 
 ## Globbing
 
@@ -124,7 +124,7 @@ Let's say we have this project checked out and we wanted to just find files that
 
 <img width="100%" src="{{ site.url }}/assets/2014/glob_time_before.jpg" />
 
-We can add a modifier to the __ls__ search pattern to fitler for just what we want
+We can add a modifier to the __ls__ search pattern to filter for just what we want
 
 <img width="100%" src="{{ site.url }}/assets/2014/glob_time_after.jpg" />
 
@@ -132,7 +132,7 @@ Another handy trick is to use __**__ which performs a recursive search. Where ca
 
 <img width="100%" src="{{ site.url }}/assets/2014/glob_recursive.jpg" />
 
-Let's use a modifier again to recursivly find files over 20mb.
+Let's use a modifier again to recursively find files over 20mb.
 
 <img width="100%" src="{{ site.url }}/assets/2014/glob_large_files.jpg" />
 
@@ -140,7 +140,7 @@ We aren't limited to just using __ls__. How many lines of Clojure code do I have
 
 <img width="100%" src="{{ site.url }}/assets/2014/glob_wc.jpg" />
 
-Let's say we want to recursively delete most of the clojure files in this project
+Let's say we want to recursively delete most of the Clojure files in this project
 
 <img width="100%" src="{{ site.url }}/assets/2014/glob_rm_before.jpg" />
 
@@ -160,7 +160,7 @@ Zsh cares.
 
 ## Useful aliases
 
-As well as git alaises, oh-my-zsh has a bunch of useful everyday aliases.
+As well as git aliases, oh-my-zsh has a bunch of useful everyday aliases.
 
 <img width="100%" src="{{ site.url }}/assets/2014/cd_aliases.jpg" />
 
@@ -176,7 +176,7 @@ Having the tab name changed to be the same as the running process is useful when
 
 You can manipulate long commands in Bash and Zsh by using shortcuts like __&lt;CTRL&gt;+K__ to delete characters. But, yet sometimes you want the power of a more powerful editor for manipulating commands.
 
-Whenver you find yourself in this position hit __&lt;CTRL&gt;+X &lt;CTRL&gt;+E__ to drop the current command into your $EDITOR.
+Whenever you find yourself in this position hit __&lt;CTRL&gt;+X &lt;CTRL&gt;+E__ to drop the current command into your $EDITOR.
 
 <img width="100%" src="{{ site.url }}/assets/2014/vim_mode_before.jpg" />
 
@@ -188,11 +188,11 @@ We can edit the command and save quit to get it back on our terminal.
 
 ## Plugins for your favourite tool
 
-oh-my-zsh has a comprehnsive list of plugins for tools you may use. I use the __rake__ plugin which allows you to tab into available rake commands from your Rakefile.
+oh-my-zsh has a comprehensive list of plugins for tools you may use. I use the __rake__ plugin which allows you to tab into available rake commands from your Rakefile.
 
 <img width="100%" src="{{ site.url }}/assets/2014/rake_before.jpg" />
 
-Double __&lt;TAB&gt;__ to enter a keyboard navigatable list.
+Double __&lt;TAB&gt;__ to enter a keyboard navigable list.
 
 <img width="100%" src="{{ site.url }}/assets/2014/rake_after.jpg" />
 
