@@ -11,7 +11,7 @@ Then I read about [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh). A proj
 
 ## Background
 
-If you are confident with Bssh and concerned about losing the knowledge you've built up. Then please don’t worry, 99% of what you do in Bash works the same way in Zsh. You can change shells without losing the knowledge you’ve built up.
+If you are confident with Bash and concerned about losing the knowledge you've built up. Then please don’t worry, 99% of what you do in Bash works the same way in Zsh. You can change shells without losing the knowledge you’ve built up.
 
 This guide uses Zsh version 5.0.2 and oh-my-zsh updated to the date of this article. I have not changed anything from the base install.
 
