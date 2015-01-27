@@ -53,13 +53,13 @@ Mozilla&#47;4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident&#47;4.0
 
 <h3>What is a regular expression?</h3>
 <p>Regular expressions are a DSL which consist of two parts, a <strong>target string</strong> and the <strong>regular expression</strong> itself. The regular expression part is kind of like the patterns you use to search for files with wildcards. They look very scary at first but you only need to know a few rules to get the most out of them.</p>
-<p>Given a target string of <em>'Mississippi'</em> and a regular expression of <strong>&#47;s&#47;</strong> we would get a match back as the target string contains at least one 's'. Though this is a quite simple example, usually they use a number of regular expression features like: <strong>&#47;^dw[uiop](in|vi)[^a-f]*$&#47;</strong> which matches <em>'driving'</em>.</p>
+<p>Given a target string of <em>'Mississippi'</em> and a regular expression of <strong>&#47;s&#47;</strong> we would get a match back as the target string contains at least one 's'. Though this is a quite simple example, usually they use a number of regular expression features like: <strong>&#47;^d\w[uiop](in|vi)[^a-f]*$&#47;</strong> which matches <em>'driving'</em>.</p>
 
 <h3>How does it work?</h3>
 <p>A regular expression is made up of <strong>literal characters</strong>, <strong>metacharacters</strong> and <strong>escape sequences</strong>. </p>
 <p>A <strong>literal</strong> is like in the Mississippi example above, the <strong>&#47;m&#47;</strong> literally means this contains an 'm' anywhere in the target string. </p>
 <p>A <strong>metacharacter</strong> is used within a regular expression for special characters that don't have a literal meaning, for example a caret sign indicates this regular expression must match from the start of the line. Meaning <strong>&#47;^s&#47;</strong> would no longer match Mississippi but <strong>&#47;^m&#47;</strong> would.</p>
-<p>Finally, an <strong>escape sequence</strong> is used to convert a metacharacter into a literal for when the need arrises. For example the dollar sign '$' has a special meaning so to literally search for it we'd escape it by putting a slash at the front like <strong>&#47;$&#47;</strong>. </p>
+<p>Finally, an <strong>escape sequence</strong> is used to convert a metacharacter into a literal for when the need arrises. For example the dollar sign '$' has a special meaning so to literally search for it we'd escape it by putting a slash at the front like <strong>&#47;\$&#47;</strong>. </p>
 
 <h4>Capture groups</h4>
 <p>The first metacharacter we'll get to know properly is the capture group, as this is what allows you to extract a substring of text from a target string. </p>
@@ -111,11 +111,11 @@ Mozilla&#47;4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident&#47;4.0
 <h4>Shorthand character classes</h4>
 <p>Just like with the range shorthands, the regular expression creators realised that character classes are a common occurance as well. To help with this they added some shorthand versions of popular tasks:</p>
 <ul>
-<li>d : digits [0-9]</li>
-<li>w : alpha numeric search for [0-9A-Za-z]</li>
-<li>s : searches for spaces, tabs, and other whitespace</li>
+<li>\d : digits [0-9]</li>
+<li>\w : alpha numeric search for [0-9A-Za-z]</li>
+<li>\s : searches for spaces, tabs, and other whitespace</li>
 </ul>
-<p>All of these letters can be made upper case to search for the opposite, just like the caret did previously with ranges. So <strong>D</strong> means not a number.</p>
+<p>All of these letters can be made upper case to search for the opposite, just like the caret did previously with ranges. So <strong>\D</strong> means not a number.</p>
 
 <h4>Capture groups extended</h4>
 <p>If you don't want to capture the contents of a group you can put a question mark and a colon at the start of the group. This is useful when you need to use groups but don't care what their contents are. For example <strong>&#47;the cost of the (?:grey|gray) sofa is &pound;(d+)&#47;</strong> will handle the different spellings of the colour grey, but only capture the price.</p>
@@ -125,7 +125,7 @@ Mozilla&#47;4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident&#47;4.0
 <p>You can also reuse a capture group using <strong>1</strong> to search for the same pattern again, this is called a <strong>backreference</strong>. For example with html tags you'd want to make sure that the closing tag matches exactly the same element name as the opening tag with <strong>&#47;<(em|strong)>.*</(1)>&#47;</strong> which makes sure a </strong> or </em> matches it's opening tag.</p>
 <p><a href="http:&#47;&#47;rubular.com&#47;r&#47;uGYC5JJjhZ">See this in action</a></p>
 
-<h4>&#47;^dw[uiop](in|vi)[^a-f]*$&#47;</h4>
+<h4>&#47;^d\w[uiop](in|vi)[^a-f]*$&#47;</h4>
 <p>Earlier on I said this regular expression can match the target string 'driving'.</p>
 <p><a href="http:&#47;&#47;rubular.com&#47;r&#47;Hc8vIdCC6T">See this in action</a></p>
 <p>Let's break down what's happening here. We've got positional anchors with the ^ and $ that let us know the entire contents of the string are within the regular expression. Let's remove them to give us: <strong>dw[uiop](in|vi)[^a-f]*</strong></p>
