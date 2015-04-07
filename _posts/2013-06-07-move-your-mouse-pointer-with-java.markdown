@@ -49,7 +49,7 @@ public class MouseMover {
     public static final int FIVE_SECONDS = 5000;
     public static final int MAX_Y = 400;
     public static final int MAX_X = 400;
-    
+
     public static void main(String... args) throws Exception {
         Robot robot = new Robot();
         Random random = new Random();
@@ -60,3 +60,5 @@ public class MouseMover {
     }
 }
 {% endhighlight %}
+
+I've compiled a version using Java7 which you can <a href="/assets/MouseMover.class">download</a> and use right away.
