@@ -99,6 +99,6 @@ Well I thought so, [Gary](https://twitter.com/garyfleming) looks unsure.
 
 I like the challenge of improving the conference format, and figuring out how to run a diverse conference where I live.
 
-I'll see you all next year. If your willing to share your thoughts.
+I'll see you all next year. If you're willing to share your thoughts.
 
 
