@@ -27,7 +27,7 @@ comments:
   content: |-
     I've updated your "standup" alias a bit so you don't have to hardcode your name or email.
 
-        standup = "!git log --since yesterday --author `git config user.email` --pretty=short"
+        standup = "!git log --since yesterday --author `git config user.email` --pretty=short --all"
 - id: 161
   author: Leandros
   author_email: dev@arvid-g.de
@@ -89,7 +89,7 @@ comments:
 <p>Git gives you as much flexibility in how you construct your VCS workflow as it does for the commands you use on your local repo. In your gitconfig file you can add alises for your favourite commands, in this article I'll talk about mine. You can see my gitconfig on <a href="https://github.com/joejag/dotfiles/blob/master/git/gitconfig">github</a>.</p>
 
 <h3>git standup</h3>
-<em>alias for git log &ndash;&ndash;since yesterday &ndash;&ndash;author joe</em>
+<em>alias for git log &ndash;&ndash;since yesterday &ndash;&ndash;author joe &ndash;&ndash;all</em>
 <p>Just about to head to a standup but you can't remember everything that you did yesterday? This command will come to your rescue. It only lists what you did in the last 24 hours.</p>
 
 {% highlight bash %}
