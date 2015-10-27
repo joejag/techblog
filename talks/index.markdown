@@ -4,7 +4,11 @@ status: publish
 title: Talks by Joe Wright
 ---
 
+## Confessions of a Tech Lead
 
+<iframe src="https://player.vimeo.com/video/136920278" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+Given at: *Re:develop (2015), Lean Agile Scotland (2015)*
 
 ## Are we really engineers?
 
