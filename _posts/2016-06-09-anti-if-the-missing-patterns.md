@@ -238,7 +238,7 @@ public boolean horrible(boolean foo, boolean bar, boolean baz) {
 
 ## Pattern 5: Give a coping strategy
 
-Context: You are calling some other code, but you aren't sure if the happy path will suceceed.
+Context: You are calling some other code, but you aren't sure if the happy path will succeed.
 
 {% highlight java %}
 public class Repository {
@@ -284,7 +284,6 @@ public class Finder {
     }
 }
 {% endhighlight %}
-
 
 ## Happy hunting
 
