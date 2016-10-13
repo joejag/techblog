@@ -19,10 +19,8 @@ tags: []
 comments: []
 ---
 
-I help people deliver software that's well designed, fully tested and released early.
+Joe Wright is a tech lead that specialises in helping legacy teams with monolithic codebases. 
+He targets the culture of teams, removing anything that they fear while improving the technical capabilities of the team.
 
-I coach teams to adopt agile practices with a focus on XP, clean code and continuous delivery. I am adept to change roles between coach, developer, architect or tester to demonstrate where the challenges are and work with teams to solve them.
+Joe is an ex-ThoughtWorker, organiser of the CodeCraft conference and the Nevergreen open source project. 
 
-In 2014, I'm trying to change the perception of software development from an 'engineering' metaphor to one of 'cultivation'. I'm developing a methodology to support this process.
-
-I blog here and have started offering one to one mentoring on TDD and OOD after success running Code Retreats. I'm known for speaking at conferences about techniques such as Continuous Delivery and engaging in deliberate practice which organisations and developers can use to improve their skills and delivery.
