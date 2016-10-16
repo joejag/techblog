@@ -3,6 +3,8 @@ layout: post
 title: Guided Conversations
 ---
 
+Update: Guided Conversation have taken off. There is now an [official site](http://guidedconversations.org) for them.
+
 Meeting formats tend to gravitate between extremes of formal or informal. From meetings with water-tight agendas, to meetings with no goal or structure. Both leave attendees bored and frustrated. Finding a format which bridges the two extremes allows us to have enjoyable and productive meetings. 
 
 [LeanCoffee](http://leancoffee.org/) has revolutionised meetings around the world by introducing an agenda-less and democratic format.
