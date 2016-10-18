@@ -3,25 +3,26 @@ layout: post
 title: "The Text Editing Kata"
 ---
 
-Today I spent 21 minutes with a team trying to convert a list of text into html elements. That's quite shocking.
+Today I spent 21 minutes with a team trying to convert a list of text into html elements.
 
-However, that's not that exceptional in our industry. I often see people manually banging out lines with minor differences without trying to take advantage of their tools.
+That’s quite shocking.
 
-However, I'm determined to make this unpleasentness into something of value. A diamond from the rough. So I'm asking you to use this Kata with a team when you notice they are doing things a tad manually.
+However, I’ve found this to be not that exceptional in our industry. I often see people manually banging out lines with minor differences without trying to take advantage of their tools.
 
-Figure out the quickest way and figure out the easiest way. Share and align your team around what process work best with your tools. After that you'll have the text wrangling muscles next time you encounter such a mundane task.
+I’m determined to make this unpleasentness into a diamond from the rough. So I’m asking you to use this Kata with a team (or yourself) when you notice things being done a tad manually.
+
+Figure out the quickest way and figure out the easiest way to solve it. Share and align your team around what process work best with your tools. After that you’ll have the text wrangling muscles for next time you encounter such a mundane task.
 
 ## The Text Editing Kata
 
 Using the editor/tools you currently use on your project. 
 Convert this list of strings into the expected html output. 
 
-### Singular example
+For example.
 
 {% highlight html %}
 "Dealer Options" 
 {% endhighlight %}
-
 
 becomes:
 
