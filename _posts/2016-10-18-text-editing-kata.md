@@ -3,7 +3,7 @@ layout: post
 title: "The Text Editing Kata"
 ---
 
-Today I spent 21 minutes with a team trying to convert a list of text into html elements.
+Today I spent 14 minutes with a team trying to convert a list of text into html elements.
 
 That’s quite shocking.
 
@@ -27,8 +27,9 @@ For example.
 becomes:
 
 {% highlight html %}
-<dd runat="server" id="ddDealerOptions">Dealer options</dd>
-<dt runat="server" id="dtDealerOptions"></dt>
+<dt runat="server" id="dtDealerOptions">Dealer options</dt>
+<dd runat="server" id="ddDealerOptions"></dd>
+
 
 {% endhighlight %}
 
@@ -65,77 +66,79 @@ Total to pay
 
 {% highlight html %}
 
-<dd runat="server" id="ddBasicPrice">Basic Price</dt>
-<dt runat="server" id="dtBasicPrice"></dt>
+<dt runat="server" id="dtBasicPrice">Basic Price</dt>
+<dd runat="server" id="ddBasicPrice"></dd>
 
-<dd runat="server" id="ddDiscount">Discount</dt>
-<dt runat="server" id="dtDiscount"></dt>
+<dt runat="server" id="dtDiscount">Discount</dt>
+<dd runat="server" id="ddDiscount"></dd>
 
-<dd runat="server" id="ddSubTotal">Sub total</dt>
-<dt runat="server" id="dtSubTotal"></dt>
+<dt runat="server" id="dtSubTotal">Sub total</dt>
+<dd runat="server" id="ddSubTotal"></dd>
 
-<dd runat="server" id="ddFactoryOptions">Factory options</dt>
-<dt runat="server" id="dtFactoryOptions"></dt>
+<dt runat="server" id="dtFactoryOptions">Factory options</dt>
+<dd runat="server" id="ddFactoryOptions"></dd>
 
-<dd runat="server" id="ddDealerOptions">Dealer options</dt>
-<dt runat="server" id="dtDealerOptions"></dt>
+<dt runat="server" id="dtDealerOptions">Dealer options</dt>
+<dd runat="server" id="ddDealerOptions"></dd>
 
-<dd runat="server" id="ddFuelAndMats">Fuel and mats</dt>
-<dt runat="server" id="dtFuelAndMats"></dt>
+<dt runat="server" id="dtFuelAndMats">Fuel and mats</dt>
+<dd runat="server" id="ddFuelAndMats"></dd>
 
-<dd runat="server" id="ddRoadFundLicence">Road fund licence </dt>
-<dt runat="server" id="dtRoadFundLicence"></dt>
+<dt runat="server" id="dtRoadFundLicence">Road fund licence</dt>
+<dd runat="server" id="ddRoadFundLicence"></dd>
 
-<dd runat="server" id="ddNumberPlatesAndDelivery">Number plates and delivery</dt>
-<dt runat="server" id="dtNumberPlatesAndDelivery"></dt>
+<dt runat="server" id="dtNumberPlatesAndDelivery">Number plates and delivery</dt>
+<dd runat="server" id="ddNumberPlatesAndDelivery"></dd>
 
-<dd runat="server" id="ddRegistrationFees">Registration fees </dt>
-<dt runat="server" id="dtRegistrationFees"></dt>
+<dt runat="server" id="dtRegistrationFees">Registration fees</dt>
+<dd runat="server" id="ddRegistrationFees"></dd>
 
-<dd runat="server" id="ddSubTotal">Sub total</dt>
-<dt runat="server" id="dtSubTotal"></dt>
+<dt runat="server" id="dtSubTotal">Sub total</dt>
+<dd runat="server" id="ddSubTotal"></dd>
 
-<dd runat="server" id="ddServicePlan">Service plan</dt>
-<dt runat="server" id="dtServicePlan"></dt>
+<dt runat="server" id="dtServicePlan">Service plan</dt>
+<dd runat="server" id="ddServicePlan"></dd>
 
-<dd runat="server" id="ddAutocare">Autocare</dt>
-<dt runat="server" id="dtAutocare"></dt>
+<dt runat="server" id="dtAutocare">Autocare</dt>
+<dd runat="server" id="ddAutocare"></dd>
 
-<dd runat="server" id="ddProtect">Protect</dt>
-<dt runat="server" id="dtProtect"></dt>
+<dt runat="server" id="dtProtect">Protect</dt>
+<dd runat="server" id="ddProtect"></dd>
 
-<dd runat="server" id="ddVri">VRI</dt>
-<dt runat="server" id="dtVri"></dt>
+<dt runat="server" id="dtVri">VRI</dt>
+<dd runat="server" id="ddVri"></dd>
 
-<dd runat="server" id="ddOurInsurance">Our Insurance</dt>
-<dt runat="server" id="dtOurInsurance"></dt>
+<dt runat="server" id="dtOurInsurance">Our Insurance</dt>
+<dd runat="server" id="ddOurInsurance"></dd>
 
-<dd runat="server" id="ddSubTotal">Sub total </dt>
-<dt runat="server" id="dtSubTotal"></dt>
+<dt runat="server" id="dtSubTotal">Sub total</dt>
+<dd runat="server" id="ddSubTotal"></dd>
 
-<dd runat="server" id="ddCustomerContribution">Customer contribution</dt>
-<dt runat="server" id="dtCustomerContribution"></dt>
+<dt runat="server" id="dtCustomerContribution">Customer contribution</dt>
+<dd runat="server" id="ddCustomerContribution"></dd>
 
-<dd runat="server" id="ddPartExchangeValue">Part exchange value</dt>
-<dt runat="server" id="dtPartExchangeValue"></dt>
+<dt runat="server" id="dtPartExchangeValue">Part exchange value</dt>
+<dd runat="server" id="ddPartExchangeValue"></dd>
 
-<dd runat="server" id="ddCashBack">Cash back</dt>
-<dt runat="server" id="dtCashBack"></dt>
+<dt runat="server" id="dtCashBack">Cash back</dt>
+<dd runat="server" id="ddCashBack"></dd>
 
-<dd runat="server" id="ddSettlement">Settlement</dt>
-<dt runat="server" id="dtSettlement"></dt>
+<dt runat="server" id="dtSettlement">Settlement</dt>
+<dd runat="server" id="ddSettlement"></dd>
 
-<dd runat="server" id="ddSubTotal">Sub total</dt>
-<dt runat="server" id="dtSubTotal"></dt>
+<dt runat="server" id="dtSubTotal">Sub total</dt>
+<dd runat="server" id="ddSubTotal"></dd>
 
-<dd runat="server" id="ddCreditCardHandlingCharge">Credit card handling charge</dt>
-<dt runat="server" id="dtCreditCardHandlingCharge"></dt>
+<dt runat="server" id="dtCreditCardHandlingCharge">Credit card handling charge</dt>
+<dd runat="server" id="ddCreditCardHandlingCharge"></dd>
 
-<dd runat="server" id="ddVat">Vat</dt>
-<dt runat="server" id="dtVat"></dt>
+<dt runat="server" id="dtVat">Vat</dt>
+<dd runat="server" id="ddVat"></dd>
 
-<dd runat="server" id="ddTotalToPay">Total to pay</dt>
-<dt runat="server" id="dtTotalToPay"></dt>
+<dt runat="server" id="dtTotalToPay">Total to pay</dt>
+<dd runat="server" id="ddTotalToPay"></dd>
+
+
 {% endhighlight %}
 
 Good luck!
