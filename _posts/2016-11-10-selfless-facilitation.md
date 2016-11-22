@@ -40,7 +40,7 @@ Instead the selfless facilitator is focusing on guiding and making sure their is
 
 ## Getting everyone to speak and feel heard
 
-Getting everyone to contribute is important.
+Giving everyone the opportunity to contribute is important.
 
 It's how we create deep rather than shallow agreement.
 It generates the most ideas and options.
