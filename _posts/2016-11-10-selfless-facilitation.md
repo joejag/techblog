@@ -3,6 +3,10 @@ layout: post
 title: "Selfless Facilitation"
 ---
 
+<img width="100%" src="{{ site.url }}/assets/2016/chairs.jpg"/>
+<a style="float:right; font-style: italic; font-size: 0.8em;" href="https://www.flickr.com/photos/memnativ/3902949869/in/photolist-6WTD28-auaMi4-aDGzBK-d9NJsc-8xwLM1-4F39QA-4Eaynn-hc5JeS-pRLV3A-gQbtGD-eLxzUw-naLzLb-qEDYyp-5u18Ud-8Wjuzm-52qTmb-jnyhBt-JGZc5h-e4Kfq1-7Frakx-Gwovcp-jnzYsN-eSJiRx-8MoVHK-8v4zFK-5xcBdu-ocE6KV-jK3VnF-gtJ3y5-bvspvT-gGQQE3-5u9exz-9dmBWM-7vMq6L-p5BEWi-do6Q7-qvGh1e-5Mpw2V-9DQJBs-ekfZVK-qznw2m-yq3kvQ-oCszT4-ciJu8L-qaJNGv-jXSzDp-i8jcWz-4R9DYb-fLaydu-ekhb82">Image by Funky Tee</a>
+
+
 Meetings shouldn't suck.
 
 But they often do.
