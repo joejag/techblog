@@ -11,11 +11,11 @@ Meetings shouldn't suck.
 
 But they often do.
 
-There's a few reasons for sucky meetings: No agenda, no one knows why they are there, wrong people in the room.
+There's a few reasons for sucky meetings: No agenda, no one knows why they are there, having the wrong people in the room.
 
 But the easiest way to guarantee a meeting suck will suck is by poor facilitation.
 
-At its best facilitation makes for an easy and productive meeting, with deep discussion of the ideas present and with the participants all being heard rather than a just a few loud voices.
+Done right, facilitation makes for an easy and productive meeting, with deep discussion of ideas and all participants being heard rather than a just a few loud voices.
 
 But achieving this is hard.
 And I'd argue is near impossible if the facilitator is also emotionally invested in the outcome of the meeting.
@@ -42,9 +42,7 @@ Instead the selfless facilitator is focusing on guiding and making sure their is
 
 Giving everyone the opportunity to contribute is important.
 
-It's how we create deep rather than shallow agreement.
-It generates the most ideas and options.
-Making sure we can pick our next action given the diverse experience in the room.
+It's how we create deep rather than shallow agreement by generating the most ideas and options and making sure we can pick our next action given the diverse experience in the room.
 
 However, getting everyone to contribute can be hard.
 
@@ -55,9 +53,7 @@ If someone has spoken already, they are far more likely to speak later.
 
 ## Loud voices
 
-Sometimes just getting everyone in the room can be difficult.
-Another thing that that is difficult is making sure a handful of loud voices don't dominate the discussion.
-
+Making sure a handful of loud voices don't dominate the discussion can be difficult.
 One way around this is to ask everyone to help at the start.
 
 During the opening remind everyone that we want to hear from all of those present, so we can learn and make the most informed decisions.
@@ -67,59 +63,72 @@ It's this brief pause that allows other folk to share their opinion.
 
 Sometimes you see one person repeating the same point over and over.
 They are doing this because they don't think they are being heard by the group.
-If you detect this it can be worthwhile as an organiser to look the person in the eye and repeat part of what they've said.
+If you spot this it can be worthwhile as an organiser to look the person in the eye and repeat part of what they've said.
 
 ## Encouraging discussion
 
 Great.
-We've got everyone to introduce themselves and asked the louder participants to become self-aware.
-So we're done?
+So we've got everyone to introduce themselves and asked the louder participants to become self-aware.
+So we're done right?
 
 Not a chance.
 
-Depending on your group, it tends to take a while before a group is openly discussing.
-As a facilitator we need to encourage folk to discuss their ideas a bit more and ask others to comment.
+It tends to take a while before a group is openly discussing.
+We need to ask participants to talk about their ideas a bit more and encourage other to share their views.
 
-You want to have a combination of initial, probing and clarifying questions to allow participants ideas to shine.
+We achieve this by using a combination of initial, probing and clarifying questions to allow participants ideas to shine.
 
-Initial questions set the scene, and depend largely on your format and topic of discussion.
-Probing questions ask for clarification and sometimes elaboration on a response.
-If a participant brings up a topic you don't know much about, or don't think the group will know much about, then it's a good time to ask for elaboration.
+__Initial questions__ set the scene and depend upon your format and topic of discussion.
 
-There's two more options that a facilitator can use.
+__Probing questions__ ask for elaboration on a response, if you feel like someone has a bit more to say, or an idea intrigues you, ask them to speak a bit more.
 
-Revisit what's already been said earlier and bring it into later discussions.
+__Clarifying questions__ can be used if a participant brings up a topic you don't think the group will know much about or that is ambiguous in meaning. Providing them with another chance to elaborate.
+
+There's two more practices that a facilitator can use.
+
+The first is to revisit what's already been said earlier and bring it into later discussions.
 This can help a theme be discovered.
 And encourage other participants to add their reactions to another comment. "How do you feel about X?"
 
 Finally, learn to love silences.
 Don't get worried that no one is speaking and feel like you have to fill the void.
 Just let it hang there.
+Someone will fill it.
 
 ## Control and observe the environment
 
-It's important to set the meeting environment up for success.
+All of this advice is good and well.
+But if the place you've chosen to host the meeting isn't amenable to creating discussion, then it's all in vain.
 
-Little things can distract participants. Make sure there's little background noise. If you can, make sure it's easy for people to get a drink. Thirsty folk don't talk.
+So it's important for the meeting environment to be set up for success.
 
-Setting the furniture up right is important too. Make sure everyone can see each other. Having chairs in a circle helps with this. Removing the table in the middle can help if you think a group is going to be shy.
+Little things can distract participants.
+Make sure there's little background noise and make sure it's easy for people to get a drink.
+Thirsty folk don't talk.
+
+Setting the furniture up right is important too.
+Make sure everyone can see each other by having chairs in a circle.
+If the group is going to be shy then removing the table in the middle can help too.
 
 Once the environment is ready it's worth watching participants body language during the meeting.
 
 Are people engaged?
 
-You can notice by watching them. They'll either be watching what people are saying or looking around the room. If only a few folk are making eye contact then it's time to move the conversation forward. This is a good trick to use when an off-topic agenda item comes up. You can let it run for a little while if the group seem interested.
+You notice by watching them.
+They'll either be paying attention when someone speaks or looking around the room.
+If only a few folk are making eye contact then it's time to move the conversation forward.
 
-If someone has a perplexed look on their face it can be worth calling them out on it. Folk can react non-verbally to what's being said. So it's worth studying facial expressions.
+If someone has a perplexed look on their face it can be worth calling them out on it.
+Folk can react non-verbally to what's being said. So it's worth studying facial expressions.
 
 Lastly, remember to take a break. No one likes sitting for too long.
 
 ## Take aways
 
 * Be selfless: do not get emotionally involved in the discussion
+* Set the room up for success
+* Ask loud voices to leave a pause before speaking again
 * Get everyone to talk at the start
-* Ask loud voices to leave a pause before speaking
 * Ask initial, probing and clarifying questions to keep the discussion going
 * Reiterate what's been said earlier and ask for reactions
-* Love silences
 * Observe body language and react to it
