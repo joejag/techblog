@@ -170,7 +170,7 @@ public class NorwegianBird extends Bird {
 
 _note: This example only has one method being switched on for brevity, it's more compelling when there are multiple switches_
 
-## Patten 3: NullObject/Optional over null passing
+## Pattern 3: NullObject/Optional over null passing
 
 Context: An outsider asked to understand the primary purpose of your code base answers with "to check if things equal null".
 
@@ -204,7 +204,7 @@ private int sumOf(List<Integer> numbers) {
 }
 {% endhighlight %}
 
-## Patten 4: Inline statements into expressions 
+## Pattern 4: Inline statements into expressions 
 
 Context: You have an if statement tree that calculates a boolean expression.
 
