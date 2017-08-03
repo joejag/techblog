@@ -172,7 +172,7 @@ _note: This example only has one method being switched on for brevity, it's more
 
 ## Patten 3: NullObject/Optional over null passing
 
-Context: A outsider asked to understand the primary purpose of your code base answers with "to check if things equal null".
+Context: An outsider asked to understand the primary purpose of your code base answers with "to check if things equal null".
 
 {% highlight java %}
 public void example() {
