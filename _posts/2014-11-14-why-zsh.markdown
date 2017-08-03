@@ -58,7 +58,7 @@ It finds the last command we typed starting with 'ls'. We could continue pressin
 
 ## Shared command history
 
-In Bash each shell has it's own history. Zshs shares the command history with all active shells. This means you don't have to remember where you typed that command.
+In Bash each shell has its own history. Zshs shares the command history with all active shells. This means you don't have to remember where you typed that command.
 
 ## Expand environment variables
 
