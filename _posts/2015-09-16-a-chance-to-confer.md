@@ -3,11 +3,11 @@ layout: post
 title: Reflections on running a guided conversation conference
 ---
 
-Last week I saw the product of months of planning and worry came to fruition as [CodeCraftConf](http://conf.codecraftuk.org/) brought local developers together. 
-They weren't there to hear advice from an expert, but to share peer to peer their own opinions, thoughts and experiences.
+Last week I saw the product of months of planning and worry came to fruition as [CodeCraftConf](http://conf.codecraftuk.org/) brought local developers together.
+They were not there to hear advice from an expert, but to share peer to peer their own opinions, thoughts and experiences.
 We call the format that supports this style a [guided conversation](/2015/guided-conversations.html)
 
-I can't quite put in the words how it feels to finally have your conference be over.
+I can't put in the words how it feels to have your conference to finish.
 But I'll try.
 It's like the same feeling you have the day after your wedding.
 All that preparation and now you are having a cup of tea without any nagging thoughts in your head.
@@ -19,7 +19,7 @@ I've decided to think over what worked well and what I would change for any futu
 
 ## Were you scared?
 
-During the first few minutes of the conversations I was terrified.
+During the first minutes of the conversations I'm feeling terror.
 We'd invited a collection of local development talent, given them a coffee, then left them to talk over a subject at 9:15am on a Friday.
 What if no one speaks!
 What if they all walk out after one session thinking it's not for them!
@@ -35,10 +35,10 @@ Our first two guides both engaged the group and had a jovial manner which put my
 Yes. By limiting the number of people in each session.
 
 We limited each session to 21 participants by limiting the chairs and saying you must have a chair to be part of the conversation.
-Using this rule you could run many parallel sessions on different topics. 
+Using this rule you could run parallel sessions on different topics.
 You'd probably want to run the same theme a few times if it was a popular topic like TDD or MicroServices.
 
-I personally met every guide we had facilitate sessions before the conference.
+I personally met every guide we had run sessions before the conference.
 The reason for doing this was to make sure they understood the goal of the format.
 The guide doesn't have to be an expert, just an enthusiastic person with the ability to facilitate a group discussion.
 For this conference the guides happened to all be experts as we found them via a CFP.
@@ -92,13 +92,11 @@ The Lean Coffee we ran before lunch was well attended, I'd probably give that tw
 
 <img width="100%" src="{{ site.url }}/assets/2015/kicking_back.jpg" />
 
-The picture above was taken minutes before the end of the conference.
-We had just ran our first ever conference, using a brand new format.
+The picture above came minutes before the end of the conference.
+We had ran our first ever conference, using a brand new format.
 And it worked.
 Well I thought so, [Gary](https://twitter.com/garyfleming) looks unsure.
 
 I like the challenge of improving the conference format, and figuring out how to run a diverse conference where I live.
 
 I'll see you all next year. If you're willing to share your thoughts.
-
-
