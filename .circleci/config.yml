@@ -13,10 +13,8 @@ jobs:
 
     steps:
       - checkout
-      - run:
-          name: install dependencies
-          command: |
-            bundle install --jobs=4 --retry=3 --path vendor/bundle
+      - run: bundle install --jobs=4 --retry=3 --path vendor/bundle
       - run: bundle exec jekyll build
+      - run: sudo apt install rsync
       - run: rsync -avz _site/ ubuntu@joejag.com:/tmp/checkme
           
