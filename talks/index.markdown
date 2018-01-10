@@ -6,7 +6,7 @@ title: Talks by Joe Wright
 
 ## Tackling 16 years of legacy code with mob programming and Lego
 
-<iframe width="500" height="282" src="https://www.youtube.com/embed/kOACFsO0blU" frameborder="0" allowfullscreen></iframe>
+<iframe width="500" height="280" src="https://www.youtube.com/embed/kOACFsO0blU" frameborder="0" allowfullscreen></iframe>
 
 Given at: *iTAKE (2017), Lean Agile Scotland (2017)*
 
