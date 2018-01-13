@@ -5,7 +5,7 @@ title: "The graduate decision"
 <img width="100%" src="{{ site.url }}/assets/2018/graduate.jpg"/>
 <a style="float:right; font-style: italic; font-size: 0.8em;" href="https://flickr.com/photos/ralphandjenny/4612732045">'Graduated!' by Ralph Daily</a>
 
-One day I received this phone call:
+One day I received a phone call:
 
 *"We've just hired a highly experienced developer who can join your team next week. There's one catch though, you'll have to give up your new graduate developer. What do you want to do?"*
 
