@@ -59,6 +59,6 @@ Again though, if you don't have a strong team, you might want to avoid adding mo
 
 You might choose to hire a graduate now, but whatever you choose to do please remember this: 
 
-Whenever you add or remove a person from your team. You have a new team. The previous team is dead.
+Whenever you add or remove a person from your team. You have a new team. The previous team is gone.
 
 Each person brings principles, practives and role specialisations. When they leave the values of the team change. How the team likes to work changes, how they communicate will change. The change is not always for the best, but if you watch your teams culture then you can make better decisions about who to bring into your team next.
