@@ -520,3 +520,13 @@ time {
     line-height: 1.2em;
   }
 }
+
+.attribution {
+  float:right; 
+  font-style: italic; 
+  font-size: 0.8em;
+  color: rgb(170, 170, 170);
+}
+
+.attribution:hover   { color: #2a7ae2; text-decoration: underline; }
+.attribution:visited { color: rgb(170, 170, 170); }
