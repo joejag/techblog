@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The four qualities that underpin an effective test suite"
+title: "Four qualities that underpin an effective test suite"
 ---
 
 <img width="100%" src="{{ site.url }}/assets/2018/traffic_light_covers.jpg"/>
