@@ -104,7 +104,7 @@ Next up let's log everything the browser console has:
     }
  {% endhighlight %}
 
-This is useful if you are using a frontend framework like React, Ansible or copious JQuery. The errors that these libraries create will be available you in the test output.
+This is useful if you are using a frontend framework like React, Angular or copious JQuery. The errors that these libraries create will be available you in the test output.
 
 Now we've seen the parts alone, here is the `SeleniumBase` file in full:
 
