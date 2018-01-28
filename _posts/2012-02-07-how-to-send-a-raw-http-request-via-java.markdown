@@ -1,40 +1,13 @@
 ---
 layout: post
-status: publish
-published: true
 title: How to send a raw HTTP request via Java
-author:
-  display_name: Joe Wright
-  login: joejag
-  email: joe@joejag.com
-  url: ''
-author_login: joejag
-author_email: joe@joejag.com
-wordpress_id: 702
-wordpress_url: http://code.joejag.com/?p=702
-date: '2012-02-07 22:06:32 +0000'
-date_gmt: '2012-02-07 22:06:32 +0000'
-categories:
-- Uncategorized
-tags: []
-comments:
-- id: 150
-  author: Skyler
-  author_email: skykistler@teamlucidic.com
-  author_url: http://teamlucidic.com
-  date: '2013-03-18 14:22:44 +0000'
-  date_gmt: '2013-03-18 14:22:44 +0000'
-  content: Thank you so much for this, I've been looking everywhere for something
-    that doesn't try and do everything automatically for me.
-- id: 151
-  author: Asit
-  author_email: asitkharshikar@gmail.com
-  author_url: ''
-  date: '2014-04-18 09:32:48 +0100'
-  date_gmt: '2014-04-18 08:32:48 +0100'
-  content: |-
-    Maybe i did not understand your use case completely
-    curl --get --include http:&#47;&#47;www.google.co.uk&#47;intl&#47;en&#47;policies&#47;privacy&#47; does not require explicit xml conversion
+related: 
+    - title: 'Move your mouse pointer with Java'
+      url: '/2013/move-your-mouse-pointer-with-java.html'
+    - title: "A DSL for collections in Java"
+      url: '/2011/a-dsl-for-collections-in-java.html'
+    - title: 'Anti-If: The missing patterns'
+      url: '/2016/anti-if-the-missing-patterns.html'
 ---
 <p>While trying to figure out how a service worked I recently had to put together a Java class that let you easily replay a http conversation which had been sniffed.</p>
 <p>I got bored of using telnet while making small changes to the payload and curl wants requests converted into an XML format it appears.</p>

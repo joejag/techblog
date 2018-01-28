@@ -1,6 +1,13 @@
 ---
 layout: post
 title: My favourite Zsh features
+related: 
+    - title: 'Anti-If: The missing patterns'
+      url: '/2016/anti-if-the-missing-patterns.html'
+    - title: 'The Text Editing Kata'
+      url: '/2016/text-editing-kata.html'
+    - title: "Everyday Git Aliases"
+      url: '/2013/everyday-git-aliases.html'
 ---
 
 Zsh has seen wide adoption by developers looking to improve their interactive shell experience. I'm rather late to this party, but I'd like you to join too.

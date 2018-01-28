@@ -1,6 +1,13 @@
 ---
 layout: post
 title: "Anti-If: The missing patterns"
+related: 
+    - title: 'Revealing the design of FizzBuzz'
+      url: '/2017/revealing-design.html'
+    - title: 'Four qualities that underpin an effective test suite'
+      url: '/2018/the-four-qualities-of-a-good-test-suite.html'
+    - title: "Choose one: Feature Toggles vs Authorisation"
+      url: '/2014/feature-toggles-vs-authorisation.html'
 ---
 
 Around 10 years ago I encountered the [anti-if campaign](http://antiifcampaign.com) and found it to be an absurd concept. How on earth would you make a useful program without using an if statement? Preposterous.
