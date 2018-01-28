@@ -32,7 +32,7 @@ In this case the team has come to BDD in the backwards order. They adopt the aut
 
 Often it's testers that pick up the Cucumber tooling.
 
-I have empathy for testers that come to Cucumber via the tooling. Testing tooling can be clunky and involves tweaking CSV files. Using Gherkin to express business problems in data tables with configurable code blocks is a marked improvement.
+I have empathy for testers that come to Cucumber via the tooling. Testing tooling can be clunky record and playback types or involve tweaking Excel files. Using Gherkin to express business problems in data tables with configurable code blocks is a marked improvement.
 
 Working in isolation comes at a price. Your tests will all be expensive end to end tests. When tooling comes first you often find Cucumber used as a mere [DSL](https://martinfowler.com/books/dsl.html) for Selenium.
 
