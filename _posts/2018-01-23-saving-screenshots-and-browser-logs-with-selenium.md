@@ -1,6 +1,13 @@
 ---
 layout: post
 title: "Make Selenium tests illuminating by saving the browser log and a screenshot"
+related: 
+    - title: 'Making BDD more than tooling'
+      url: '/2018/bdd-acquisition-models.html'
+    - title: 'Four qualities that underpin an effective test suite'
+      url: '/2018/the-four-qualities-of-a-good-test-suite.html'
+    - title: "What's your problem?"
+      url: '/2013/considerations-when-adopting-a-new-tool-or-practice.html'
 ---
 
 Tests need  __Illumination__ to allow us to diagnose what has gone wrong. We should never have to re-run a test to figure out what the actual problem is.

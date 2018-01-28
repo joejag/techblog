@@ -1,0 +1,10 @@
+{% if page.related %}
+      <div>
+        <h4>Related Articles</h4>
+        <ul>
+          {% for related in page.related %}
+         <li><a href="{{ related.url }}">{{ related.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+{% endif %}

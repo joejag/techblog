@@ -1,6 +1,14 @@
 ---
 layout: post
 title: "Four qualities that underpin an effective test suite"
+related: 
+    - title: 'Make Selenium tests illuminating by saving the browser log and a screenshot'
+      url: '/2018/saving-screenshots-and-browser-logs-with-selenium.html'
+    - title: 'Making BDD more than tooling'
+      url: '/2018/bdd-acquisition-models.html'
+    - title: 'Agile is more about efficiency then effectiveness'
+      url: '/2013/agile-is-more-about-efficiency-than-effectiveness.html'
+      
 ---
 
 <img width="100%" src="{{ site.url }}/assets/2018/traffic_light_covers.jpg"/>

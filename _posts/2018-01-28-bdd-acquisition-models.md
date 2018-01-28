@@ -1,6 +1,13 @@
 ---
 layout: post
 title: "Making BDD more than tooling"
+related: 
+    - title: 'Make Selenium tests illuminating by saving the browser log and a screenshot'
+      url: '/2018/saving-screenshots-and-browser-logs-with-selenium.html'
+    - title: 'Four qualities that underpin an effective test suite'
+      url: '/2018/the-four-qualities-of-a-good-test-suite.html'
+    - title: "What's your problem?"
+      url: '/2013/considerations-when-adopting-a-new-tool-or-practice.html'
 ---
 
 <img width="100%" src="{{ site.url }}/assets/2018/bdd_tooling.jpg"/>
