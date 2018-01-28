@@ -1,0 +1,41 @@
+{% if site.data.comments[page.slug] %}
+{% assign comments = site.data.comments[page.slug] | sort %}
+
+<h4>Hand picked comments</h4>
+<div class="blog-comment">
+    <ul class="comments">
+        {% for comment in comments %}
+        <li class="clearfix">
+          <img src="https://www.gravatar.com/avatar/{{ comment[1].email }}" class="avatar" alt="">
+          <div class="post-comments">
+              <p class="meta">{{ comment[1].date | date: "%B %d, %Y" }} <strong>{{ comment[1].name}}</strong> says</p>
+              <p>
+                  {{ comment[1].message }}
+              </p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}
+
+<h4>Fancy commenting?</h4>
+
+<form method="POST" action="https://api.staticman.net/v2/entry/joejag/techblog/master/comments">
+  <input type="hidden" name="options[redirect]" value="https://code.joejag.com">
+  <input type="hidden" name="options[origin]" value="{{ page.url | absolute_url }}">
+  <input type="hidden" name="options[slug]" value="{{ page.slug }}">
+
+  <div>
+    <label class="desc" for="name">Name</label>
+    <input name="fields[name]" type="text" id="name">
+    
+    <label class="desc" for="email">Email</label>
+    <input name="fields[email]" type="email" id="email">
+
+    <label class="desc">Message</label>
+    <textarea name="fields[message]" spellcheck="true" rows="10" cols="50"></textarea>
+    
+    <button type="submit">Submit</button>
+  </div>
+</form>
