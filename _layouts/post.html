@@ -14,28 +14,48 @@ layout: default
   <a href="https://twitter.com/share" class="twitter-share-button" data-via="joe_jag">Tweet</a>
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
+  
+  {% if site.data.comments[page.slug] %}
+  {% assign comments = site.data.comments[page.slug] | sort %}
 
-  <!-- <form method="POST" action="https://api.staticman.net/v2/entry/joejag/techblog/master/comments">
-    <input name="options[redirect]" type="hidden" value="https://code.joejag.com">
-    <input name="options[slug]" type="hidden" value="{{ page.slug }}">
-    <label><input name="fields[name]" type="text">Name</label>
-    <label><input name="fields[email]" type="email">E-mail</label>
-    <label><textarea name="fields[message]"></textarea>Message</label>
-    
-    <button type="submit">Go!</button>
-  </form>
-
-  {% assign comments = site.data.comments | sort %}
-  {% for comment in comments %}
-    {% if comment[1].slug == page.slug %}
-    <div>
-      {{ comment[1].name }}
-        <img class="comment__avatar" src="https://www.gravatar.com/avatar/{{ comment[1].email }}" height="50" width="50">
-      {{ comment[1].message }}
-      {{ comment[1].date }}
+  <h4>Hand picked comments</h4>
+  <div class="blog-comment">
+      <ul class="comments">
+          {% for comment in comments %}
+          <li class="clearfix">
+            <img src="https://www.gravatar.com/avatar/{{ comment[1].email }}" class="avatar" alt="">
+            <div class="post-comments">
+                <p class="meta">{{ comment[1].date | date: "%B %d, %Y" }} <strong>{{ comment[1].name}}</strong> says</p>
+                <p>
+                    {{ comment[1].message }}
+                </p>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
-    {% endif %}
-  {% endfor %} -->
+  {% endif %}
+
+<h4>Fancy commenting?</h4>
+
+  <form method="POST" action="https://api.staticman.net/v2/entry/joejag/techblog/master/comments">
+    <input type="hidden" name="options[redirect]" value="https://code.joejag.com">
+    <input type="hidden" name="options[origin]" value="{{ page.url | absolute_url }}">
+    <input type="hidden" name="options[slug]" value="{{ page.slug }}">
+
+    <div>
+      <label class="desc" for="name">Name</label>
+      <input name="fields[name]" type="text" id="name">
+      
+      <label class="desc" for="email">Email</label>
+      <input name="fields[email]" type="email" id="email">
+
+      <label class="desc">Message</label>
+      <textarea name="fields[message]" spellcheck="true" rows="10" cols="50"></textarea>
+      
+      <button type="submit">Submit</button>
+    </div>
+  </form>
 
   </article>
 
