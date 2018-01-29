@@ -13,7 +13,7 @@ related:
 <img width="100%" src="{{ site.url }}/assets/2018/wrong_way.jpg"/>
 <a class="attribution" href="http://www.keesler.af.mil/News/Photos/igphoto/2000584217/">'Kemberly Grove' by Keesler Air Force Base</a>
 
-As an outgoing sort, I attend Lean Coffee sessions where practitioners in a discipline get together to ask for help and share ideas.
+As an outgoing sort, I attend [Lean Coffee](http://agilecoffee.com/leancoffee/) sessions where practitioners in a discipline get together to ask for help and share ideas.
 
 If you've not been to a Lean Coffee before then I highly recommend it. You can run one yourself too. You don't even need an agenda. Just a group of folk with a common interest and some sticky notes for them to write potential questions on.
 
