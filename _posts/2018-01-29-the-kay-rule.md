@@ -41,5 +41,7 @@ At the start of a round of Lean Coffee the Proposer introduces their topic. This
 
 After that you may talk about your favourite tool. As the inquiry period gives us the IQ point bump required to know whether it'll be a relevant suggestion.
 
+As a facilitator you could introduce the rule before you begin. Or intervene and introduce it when you feel the Proposer's problem hasn't been explored in enough depth.
+
 That's it. Another step towards world peace.
 
