@@ -43,15 +43,3 @@ After that you may talk about your favourite tool. As the inquiry period gives u
 
 That's it. Another step towards world peace.
 
-Oh that reminds me. Conference, Q&As.
-
-You know what I'm talking about. An organiser thanks the speaker then turns to the audience for comment. Letting anyone take over the session for their burning questions. 
-
-This is the conference version of asking for the loudest person on a YouTube channel to take over your broadcast. It's never pretty. 
-
-But here's a bit of advice for conference organisers that they can use to prime the audience to make it bearable for everyone:
-
-> Your first sentence should be a question, and you shouldn't have a second sentence
-> -- <cite>[Unknown hero]
-
-
