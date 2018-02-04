@@ -92,9 +92,7 @@ When you see the code is ugly it should fire a desire in you to improve it. We'l
 
 The two blank line budget is an __enabling constraint__. Enabling constraints are about opening up opportunities by limiting our choices.
 
-Jeff Bezos has his famous 'two pizza team' constraint. He also constrains his teams to always [create APIs that are externalizable](https://plus.google.com/+RipRowan/posts/eVeouesvaVX) to the world. The success of AWS makes sense when you know that rule was in place. Without it, Amazon would be a different company.
-
-Enabling constraints are alive in other disciplines. There was once a challenge for writers to sum up their life in six words:
+There was once a challenge for writers to sum up their life in six words:
 
 > I picked passion. Now I'm poor. 
 > -- <cite>[Kathleen E. Whitlock]
