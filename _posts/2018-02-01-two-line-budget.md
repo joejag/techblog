@@ -10,7 +10,7 @@ related:
       url: '/2016/anti-if-the-missing-patterns.html'
 ---
 
-Somewhere right now a developer is putting comments into their test case. 
+Somewhere right now a developer is adding comments into their test case. 
 
 It's admirable. It's a desire to improve the readability of their code.
 
@@ -84,7 +84,7 @@ That's my first small issue with the comments that are creeping in. They are sup
 
 So what's a better approach? Just drop the comments?
 
-Not just drop them. Those comments improve readability when it's difficult to see where the different sections of the test lay. So let's attack the need for that by introducing a rule:
+Nope. Not just drop them. Those comments improve readability when it's difficult to see where the different sections of the test lay. So let's attack the need for that by introducing a rule:
 
 I'm going to give you a budget of __two blank lines maximum__ in your test cases.
 
@@ -95,7 +95,7 @@ When you remove the extra blank lines all you are left with is a wall of code.
 
 It's ugly. This is great news.
 
-When you see the code is ugly it should fire a desire in you to improve it. We'll explore an example in a minute. Because you might be thinking why on earth you'd want to adopt this rule.
+When you see the code is ugly it encourages you to improve it. We'll explore an example in a minute. Because you might be thinking why on earth you'd want to adopt this rule.
 
 The two blank line budget is an __enabling constraint__. Enabling constraints are about opening up opportunities by limiting our choices.
 
