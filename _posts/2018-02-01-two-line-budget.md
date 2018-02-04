@@ -1,6 +1,13 @@
 ---
 layout: post
 title: "Your two blank line budget for tests"
+related: 
+    - title: 'Making BDD more than tooling'
+      url: '/2018/bdd-acquisition-models.html'
+    - title: 'Make Selenium tests illuminating by saving the browser log and a screenshot'
+      url: '/2018/saving-screenshots-and-browser-logs-with-selenium.html'
+    - title: "Anti-If: The missing patterns"
+      url: '/2016/anti-if-the-missing-patterns.html'
 ---
 
 Somewhere right now a developer is putting comments into their test case. 
