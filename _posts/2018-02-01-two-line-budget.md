@@ -39,7 +39,7 @@ public void Withdraw_ValidAmount_ChangesBalance()
 }  
 {% endhighlight %}
 
-The [Bill Wake](https://xp123.com/articles/3a-arrange-act-assert/) inspired Triple A of Arrange, Act, Asset:
+The [Bill Wake](https://xp123.com/articles/3a-arrange-act-assert/) inspired Triple A of Arrange, Act, Assert:
 
 {% highlight javascript %}
 it('should do something', function() {
