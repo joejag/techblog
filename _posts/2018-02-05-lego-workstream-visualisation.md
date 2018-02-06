@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Tracking where your time went with Lego workstream visualisation"
-draft: false
 ---
 
 <img width="100%" src="{{ site.url }}/assets/2018/lego_cover.jpg"/>
