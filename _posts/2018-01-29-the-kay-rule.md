@@ -15,33 +15,33 @@ related:
 
 As an outgoing sort, I attend [Lean Coffee](http://agilecoffee.com/leancoffee/) sessions where practitioners in a discipline get together to ask for help and share ideas.
 
-If you've not been to a Lean Coffee before then I highly recommend it. You can run one yourself too. You don't even need an agenda. Just a group of folk with a common interest and some sticky notes for them to write potential questions on.
+If you've not been to a Lean Coffee, then I highly recommend it. You can run one yourself too. You don't even need an agenda. Just a group of folk with a common interest and some sticky notes for them to write potential questions on.
 
 Though simple, I've found that Lean Coffees have a recurring problem. I recently saw it manifest like this:
 
-__Proposer__: "I'm having trouble with my standups, I was wondering if the group here could share some advice"  
-__EagerInterrupter__: "What you need is an agile scaling framework"  
+__Proposer__: "I'm having trouble with my standups, I was wondering if the group here could share some advice."  
+__EagerInterrupter__: "What you need is an agile scaling framework."  
 *4 minutes pass where the interrupters favourite tool is discussed*  
 __Me__ (becoming the Interrupter): "Sorry to bring things back a step. What size is your department?"  
 __Proposer__: "Three people"  
-__EagerInterrupter__: "Ah. So probably not a scaling problem"
+__EagerInterrupter__: "Ah. So probably not a scaling problem."
 
 Argh!
 
 > context is worth 80 IQ points
 > -- <cite>[Alan Kay]
 
-I would like Lean Coffee facilitators to introduce a new rule. Which I've designed to bring up our collective IQ at our Lean Coffees.
+I would like Lean Coffee facilitators to introduce a new rule which I've designed to bring up our collective IQ at our Lean Coffees.
 
 ## The Kay Rule
 
 The group is only allowed to ask clarifying questions in the first three minutes.
 
-At the start of a round of Lean Coffee the Proposer introduces their topic. This is now followed by three minutes where the only thing the group can do is ask clarifying questions. No solutioneering. No changing the question. Only inquiry and listening.
+At the start of a round of Lean Coffee, the Proposer introduces their topic. This is now followed by three minutes where the only thing the group can do is ask clarifying questions. No solutioneering. No changing the question. Only inquiry and listening.
 
-After that you may talk about your favourite tool. As the inquiry period gives us the IQ point bump required to know whether it'll be a relevant suggestion.
+After that, you may talk about your favourite tool. As the inquiry period gives us the IQ point bump required to know whether it'll be a relevant suggestion.
 
-As a facilitator you could introduce the rule before you begin. Or intervene and introduce it when you feel the Proposer's problem hasn't been explored in enough depth.
+As a facilitator, you could introduce the rule before you begin. Or intervene and introduce it when you feel the Proposer's problem hasn't been explored in enough depth.
 
 That's it. Another step towards world peace.
 
