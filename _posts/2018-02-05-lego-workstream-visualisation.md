@@ -11,7 +11,7 @@ I worked with a team that quantified this number, and focused their process impr
 
 It took us a while to figure out an effective way of tracking it.
 
-At first we tried putting tally marks on a whiteboard. Each representing how we spent our time that day. That worked for a while until we started to run out of whiteboard space. Next up we tried an Excel document but no one looks forward to tracking their time in an Excel document. We wanted something visual and tacticle. Something that would cause conversations to happen and be fun to use.
+At first we tried putting tally marks on a whiteboard. Each representing how we spent our time that day. That worked for a while until we started to run out of whiteboard space. Next up we tried an Excel document but no one looks forward to tracking their time in an Excel document. We wanted something visual and tactile. Something that would cause conversations to happen and be fun to use.
 
 The answer was Lego bricks.
 
@@ -24,7 +24,7 @@ We came up with four categories of work, then chose a Lego colour to represent e
 * Adhoc Demand (orange): Value adding work that you didn't plan to do
 * Meetings (blue): Time spent talking about the work
 
-Planned work should be obvious, it's helping you reach your current goal. But failure demand is a bit trickier. Having to fix bugs that have escaped into production is one type. There's another more insidious variant: failure to understand the requirements the first time. This manifests in delivering the wrong features and having to do remidial work to fix the software.
+Planned work should be obvious, it's helping you reach your current goal. But failure demand is a bit trickier. Having to fix bugs that have escaped into production is one type. There's another more insidious variant: failure to understand the requirements the first time. This manifests in delivering the wrong features and having to do remedial work to fix the software.
 
 Adhoc demand you will be painfully familiar with. It's when someone smarter dressed then you comes up to you and says:
 
