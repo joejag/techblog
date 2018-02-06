@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Lego workstream visualisation"
+title: "Tracking where your time went with Lego workstream visualisation"
 draft: false
 ---
 
