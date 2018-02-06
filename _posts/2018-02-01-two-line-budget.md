@@ -10,13 +10,13 @@ related:
       url: '/2016/anti-if-the-missing-patterns.html'
 ---
 
-Somewhere right now a developer is adding comments into their test case. 
+Somewhere right now a developer is adding comments to their test case. 
 
 It's admirable. It's a desire to improve the readability of their code.
 
-But I know of a way that can improve the test to a far greater extent. Which acts as a feedback loop on the design of your code.
+But I know of a way that can improve the test to a far greater extent. Which also acts as a feedback loop on the design of your code.
 
-But first let us have a look at the state of the commenting art.
+But first, let us have a look at the state of the commenting art.
 
 Test case commenting comes in a few variations that are all ultimately the same. There's the Dan North inspired [Given, When, Then](http://www.blog.j-labs.pl/2017/02/Given-When-Then-pattern-in-unit-tests) (GWT) version:
 
@@ -78,7 +78,7 @@ These names all pay homage to [Tony Hoare's](https://en.wikipedia.org/wiki/Hoare
 * command
 * post-conditions
 
-Call it GWT or 3A, it doesn't change the anatomy of the test. All test cases follow this structure to prove their creators programs are correct.
+Call it GWT or 3A; it doesn't change the anatomy of the test. All test cases follow this structure to prove their creator's programs are correct.
 
 That's my first small issue with the comments that are creeping in. They are superfluous. Every unit test you see has the same three sections. Setting up state, performing an action then looking at the result or for a side effect. Every test has this anatomy. There's no need to point it out in hundreds of comments.
 
@@ -88,14 +88,14 @@ Nope. Not just drop them. Those comments improve readability when it's difficult
 
 I'm going to give you a budget of __two blank lines maximum__ in your test cases.
 
-See that setup state code spaced out over multiple lines? Not allowed.  
+See that set up state code spaced out over multiple lines? Not allowed.  
 See the assertions spaced out over multiple lines? Not allowed.
 
 When you remove the extra blank lines all you are left with is a wall of code. 
 
 It's ugly. This is great news.
 
-When you see the code is ugly it encourages you to improve it. We'll explore an example in a minute. Because you might be thinking why on earth you'd want to adopt this rule.
+When you see the code is ugly, it encourages you to improve it. We'll explore an example in a minute as you might be thinking why on earth you'd want to adopt this rule.
 
 The two blank line budget is an __enabling constraint__. Enabling constraints are about opening up opportunities by limiting our choices.
 
@@ -107,7 +107,7 @@ There was once a challenge for writers to sum up their life in six words:
 > Alzheimer's: meeting new people every day. 
 > -- <cite> [Phil Skversky]
 
-Without these constraints they'd never create these concise pieces of work. It's about constraining breadth to get focus and depth. And that is exactly what the two blank line budget gives you.
+Without these constraints, they'd never create these short pieces of work. It's about constraining breadth to get focus and depth. And that is precisely what the two blank line budget gives you.
 
 Time to show you the money. Here is a typical example using the GWT format. 
 
@@ -134,7 +134,7 @@ public void shouldDeliverCargoToDestination() {
 }
 {% endhighlight %}
 
-Our first step is to remove the blank lines between the Given statements. Then drop the comments. Leaving us with a wall of state setup.
+Our first step is to remove the blank lines between the Given statements. Then drop the comments. This leaves us with a wall of state setup.
 
 {% highlight java %}
 @Test
@@ -155,7 +155,7 @@ public void shouldDeliverCargoToDestination() {
 
 We've now made it ugly. So let's react to that.
 
-I hardly ever use the [Builder pattern](http://www.natpryce.com/articles/000714.html) for production code but it's terrific for test code. It let's you fluently express object construction, leaving out unimportant details.
+I hardly ever use the [Builder pattern](http://www.natpryce.com/articles/000714.html) for production code, but it's terrific for test code. It lets you fluently express object construction, leaving out unimportant details.
 
 Let's move the state setup into a Builder and see what we have:
 
@@ -173,7 +173,7 @@ public void shouldDeliverCargoToDestination() {
 }
 {% endhighlight %}
 
-Better right? You could argue that you don't even need to know the drivers name for this test. Making it leaner. In the previous test every value seemed important, in this one it's clear what is going on.
+Better right? You could argue that you don't even need to know the driver's name for this test. Making it leaner. In the previous test, every value seemed necessary, in this one, it's clear what is going on.
 
 That's what the two blank line constraint gives you. It forces you to deal with complex parts of your code, which were cosmetically fixed by adding extra blank spaces and comments.
 
