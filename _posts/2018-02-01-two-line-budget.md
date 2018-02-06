@@ -18,7 +18,7 @@ But I know of a way that can improve the test to a far greater extent. Which act
 
 But first let us have a look at the state of the commenting art.
 
-Test case commenting comes in a few variations that are all ultimately the same. There's the Dan North inspired [Given, When, Then](http://www.blog.j-labs.pl/2017/02/Given-When-Then-pattern-in-unit-tests) version:
+Test case commenting comes in a few variations that are all ultimately the same. There's the Dan North inspired [Given, When, Then](http://www.blog.j-labs.pl/2017/02/Given-When-Then-pattern-in-unit-tests) (GWT) version:
 
 {% highlight csharp %}
 [TestMethod]  
@@ -39,7 +39,7 @@ public void Withdraw_ValidAmount_ChangesBalance()
 }  
 {% endhighlight %}
 
-The [Bill Wake](https://xp123.com/articles/3a-arrange-act-assert/) inspired Triple A of Arrange, Act, Assert:
+The [Bill Wake](https://xp123.com/articles/3a-arrange-act-assert/) inspired Triple A of Arrange, Act, Assert (3A):
 
 {% highlight javascript %}
 it('should do something', function() {
