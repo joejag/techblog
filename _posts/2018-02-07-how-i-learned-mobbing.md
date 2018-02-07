@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "A mob programming adventure"
+draft: true
 ---
 
 <img width="100%" src="{{ site.url }}/assets/2018/le_mob.jpg"/>
