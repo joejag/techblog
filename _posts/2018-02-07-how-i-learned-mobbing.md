@@ -51,9 +51,9 @@ The team went from taking weeks to complete stories to hours. In fact, we had to
 
 Eventually, the management track came calling for me, and I had to leave. But that team remains one of the best learning experiences I've had in tech.
 
-Reminiscing has gotten me excited about the conference and the renowned mob programming experts leading the sessions. From [Woody](https://agilegamesnewengland.com/index.php/mob-programming-conference/41-session/204-facilitation-techniques) who popularised the method and [Llewyan](https://agilegamesnewengland.com/index.php/mob-programming-conference/41-session/217-test-driven-dev-in-a-mob) who gave mobbing its core practice of strong style pairing.
+Reminiscing has gotten me excited about the conference and the renowned mob programming experts leading the sessions. From [Woody Zuill](https://agilegamesnewengland.com/index.php/mob-programming-conference/41-session/204-facilitation-techniques) who popularised the method and [Llewellyn Falco](https://agilegamesnewengland.com/index.php/mob-programming-conference/41-session/217-test-driven-dev-in-a-mob) who gave mobbing its core practice of strong style pairing.
 
-I'm looking forward to [Dawna Jones'](https://agilegamesnewengland.com/index.php/mob-programming-conference/41-session/220-using-conflict) session on 'Using Conflict to Extend Collaboration Skills Needed for Mob Programming' and seeing [Jessica Kerr](https://agilegamesnewengland.com/index.php/mob-programming-conference/41-session/209-coding-new-world-typescript) talk about anything.
+I'm looking forward to [Dawna Jones'](https://agilegamesnewengland.com/index.php/mob-programming-conference/41-session/220-using-conflict) session on 'Using Conflict to Extend Collaboration Skills Needed for Mob Programming' and seeing [Jessica Kerr](https://agilegamesnewengland.com/index.php/mob-programming-conference/41-session/209-coding-new-world-typescript) talk about mobbing in a new language.
 
 If you can make the conference, then I'll see you there. If not then give mobbing a chance. It took me six years, and I don't want to go back.
 
