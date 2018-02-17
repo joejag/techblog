@@ -647,6 +647,10 @@ button[type=submit] {
 	font-weight: 800;
 }
 
+.header-image {
+  margin-bottom: 2em;
+}
+
 @media (max-width: 500px) {
 
   .blog-comment{
