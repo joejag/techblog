@@ -43,7 +43,7 @@ Another large part of the conference was about the categorisation of skills and 
 
 <a href="{{ site.url }}/assets/2018/soft_3.jpg"><img width="100%" src="{{ site.url }}/assets/2018/soft_3.jpg"/></a>
 
-I recommend reading the whole document: [http://www.dtic.mil/dtic/tr/fulltext/u2/a099612.pdf](https://en.wikipedia.org/wiki/Object_diagram).
+I recommend reading the whole document: [http://www.dtic.mil/dtic/tr/fulltext/u2/a099612.pdf](http://www.dtic.mil/dtic/tr/fulltext/u2/a099612.pdf).
 
 So we now know the US Military invented the term 'soft skills' to contrast with 'hard skills' that involved working with machines. But they weren't trying to be derogatory towards these skills. They wanted to create a technological way of training and measuring how well their troops were performing. 'Soft skills' were taken seriously.
 
