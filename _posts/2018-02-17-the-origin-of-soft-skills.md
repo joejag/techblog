@@ -49,7 +49,7 @@ So we now know the US Military invented the term 'soft skills' to contrast with 
 
 So let's jump 46 years later to now.
 
-Most people don't know the history of the 'soft skills' term. We recognise that those skills are important, but the majority of training we do at school or work is technical focused. This frustrates those that recognise the untapped potential we have if we started teaching 'soft skills'. 
+Most people don't know the history of the 'soft skills' term. We recognise that those skills are important, but the majority of training we do at school or work is technically focused. This frustrates those that recognise the untapped potential we have if we started teaching 'soft skills'. 
 
 Should we rename 'soft skills'?
 
