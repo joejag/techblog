@@ -71,3 +71,5 @@ Validation tests are a low hanging fruit here. There's no point spending two min
 If you can get your team talking about the work before the work takes place, and automation checks at the right level then you are in a good BDD place.
 
 I've seen __process driven__ work wonders, and I've seen __tooling driven__ hamstring teams. If you came to BDD via tooling driven then you are in a good place to start looking at testing throughout your process. I wouldn't recommend staying where you are.
+
+*Update*: Seb Rose and Gáspár Nagy have written a book on the __process driven__ model if you'd like to learn more: http://bddbooks.com/
