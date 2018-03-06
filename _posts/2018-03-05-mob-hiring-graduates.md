@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Hiring graduates when you have no idea what you are doing"
-draft: true
 ---
 
 <p class='header-image'><img width="100%" src="{{ site.url }}/assets/2018/job_fair.jpg"/>
@@ -11,7 +10,7 @@ draft: true
 
 That approach didn't get us very far.
 
-First off we attended career fairs. I'm sure you've been to these before. It's two or three folks from a hiring company standing in front of a shiny stand. As bewildered undergraduates mill around in packs, picking up another glossy brochure telling them about why that company will be a significant first step in their career.
+First off we attended career fairs. I'm sure you've been to these before. It's two or three folks from a hiring company standing in front of a shiny stand. Bewildered undergraduates wander to the stands, picking up another glossy brochure telling them about why that company will be a significant first step in their career.
 
 We did the same thing. An investment bank nearby was giving away the last year coursebook to students for free if they signed up. After four hours standing around John managed to entice four students to go to a hastily arranged web form to apply. He couldn't beat the feeling that this wasn't a right way of doing things.
 
