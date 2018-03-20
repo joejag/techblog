@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Three little questions to save your new career before it starts"
+title: "Three little questions to save your new job before it starts"
 ---
 
 <p class='header-image'><img width="100%" src="{{ site.url }}/assets/2018/three_questions.jpg"/>
