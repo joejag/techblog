@@ -17,7 +17,7 @@ Recently, I've been trying to find a way to do the inverse. How can I find out i
 
 Most interviews take place outside of the real working environment. You can't see the constraints the team are working around. So we are looking for questions that talk about their culture. We want to check where the inertia is that we won't be able to change. We aren't looking for things that are easy to change like tool choices and libraries. We want to find the big maddening things. 
 
-Looking for inspiration? Try remembering things that pissed you off at previous jobs.
+If you need inspiration try remembering things that pissed you off at previous jobs.
 
 Here's my three:
 
