@@ -6,7 +6,7 @@ title: "Revealing the design of FizzBuzz"
 <img width="100%" src="{{ site.url }}/assets/2017/conditionals.jpg"/>
 <a style="float:right; font-style: italic; font-size: 0.8em;" href="https://www.flickr.com/photos/pulpolux/254859365/in/photolist-owdNZ-e98XJP-7zBpiN-8x6Tit-9gq1aV-KTyXKM-6HWMcN-onT84D-awxey5-aDvoMu-bnPRbF-an9HLt-aDE83D-aDTiVX-6CZ83x-aCw9Sm-4zbBAR-88Y29w-5vuTRB-98NZsv-5vzcRE-dib8wy-76So96-5Dg4MM-aXF3oK-5XmCcQ-9ZowqH-bEKuoV-dib6bo-7FupSR-dib5J1-8xUbkk-dib8K4-uaXMG-dib5k1-dib7vb-aY8xhF-7i7PXk-9oD6v-dib5VL-5vuTVe-dib9CM-9fFYxN-dib4P1-dhXfMe-dib5Tk-aY8xgM-5MNHqX-4wUaaK-dib6py">'Conditional' by Pulpolux</a>
 
-1, 2, Fizz, 4, Fizz Buzz...
+1, 2, Fizz, 4, Buzz...
 
 Is it 'Fizz' next? The rules are seemingly simple enough:
 
@@ -37,9 +37,9 @@ fizzBuzz(15)
 
 All done! Shall we move on? Where do you see yourself in five years time?
 
-Actually I'd like to revisit that solution please.
+I'd like to revisit that solution, please.
 
-I've often found that design is hidden underneath conditionals. By removing conditionals we can reveal the truth about a design that was begging to be discovered.
+I've often found that design is hidden underneath conditionals. By removing conditionals, we can reveal the truth about a design that was begging to be discovered.
 
 So how do we rewrite the above solution to no longer use conditionals?
 
@@ -123,7 +123,7 @@ fizzBuzz(15)
 // => [ 1, 2, 'fizz', 4, 'buzz', 'fizz', 'bang', 8, 'fizz', 'buzz'...
 {% endhighlight %}
 
-Hmm. We got it to work. But it meant adding 4 new rules. If we added another rule it'd mean adding another 5 and so on. Cleary this design isn't that good.
+Hmm. We got it to work. But it meant adding four new rules. If we added another rule, it'd mean adding another 5 and so on. Cleary this design isn't that good.
 
 Drat.
 
@@ -187,8 +187,8 @@ export function fizzBuzz(max) {
 
 You've probably kicked me out of the interview by now. But I'd argue this solution better represents FizzBuzz and extra rules that follow it's inherent design.
 
-This may seem minor here, but it real world code this same pattern of behaviour often forces code to start mirroring real life design.
+This may seem minor here, but it real-world code this same pattern of behaviour often forces code to start mirroring real life design.
 
-I've argued the case for [no ifs]({% post_url 2016-06-09-anti-if-the-missing-patterns %}) before. So I won't reiterate them again here.
+I've argued the case for [no ifs]({% post_url 2016-06-09-anti-if-the-missing-patterns %}) before. So I won't reiterate them here.
 
-Hopefully this post has encouraged you to try removing some conditionals from your own code. If not then enjoy this [CSS solution](https://codepen.io/SachaG/pen/jCpba) instead.
+Hopefully, this post has encouraged you to try removing some conditionals from your code. If not then enjoy this [CSS solution](https://codepen.io/SachaG/pen/jCpba) instead.
