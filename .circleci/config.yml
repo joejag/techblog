@@ -16,6 +16,6 @@ jobs:
       - run: bundle install --jobs=4 --retry=3 --path vendor/bundle
       - run: bundle exec jekyll build
       - run: sudo apt install rsync
-      - run: apt-get update 
+      - run: sudo apt-get update 
       - run: rsync -avz -e "ssh -o StrictHostKeyChecking=no" _site/ ubuntu@joejag.com:/home/ubuntu/sites/code.joejag.com
           
