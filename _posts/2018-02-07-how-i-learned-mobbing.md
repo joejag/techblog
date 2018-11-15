@@ -13,7 +13,7 @@ My first attempt didn't bear the name mobbing, but it had some of the hallmarks.
 
 I gave it a go in 2009. Twelve eager people came along.
 
-It was a disaster. I didn't have the facilitation chops to coordinate that many developers behaving in this new way. The person at the keyboard would go off on a tangent, and the mob would lose interest. I chalked it up as a learning point. And never tried the style again. It could never be useful I figured.
+It was a disaster. I didn't have the facilitation chops to coordinate that many developers behaving in this new way. The person at the keyboard would go off on a tangent, and the mob would lose interest. I chalked it up as a learning point. And never tried the style again. It could never be productive I figured.
 
 Fast forward six years and I'm working at ThoughtWorks. My good friend [Adrian](https://twitter.com/mowat27) who works in the same city tells me that they have begun using mob programming in their teams. I have flashbacks to 2009 and look incredulous:
 
@@ -34,7 +34,7 @@ Funnily enough, they interviewed me in a mob setting too. The team wasn't told I
 
 Six months into my new job I got a chance to join a new team. This team looked after the Sales system and worked in a different silo from the mobbing teams. It was the traditional solo developer getting work done without code reviews set up. Quite far away from the rest of the organisation.
 
-I joined the team the same day as [Kevin Rutherford](https://silkandspinach.net/) joined them as a part-time consultant. He felt that mobbing was the best way for a team to work together. So we did for a week until had to leave.
+I joined the team the same day as [Kevin Rutherford](https://silkandspinach.net/) joined them as a part-time consultant. He felt that mobbing was the best way for a team to work together. So we did for a week until Kevin had to leave.
 
 There was tension and trepidation in the air when the team returned on Monday. Are we still going to work this way? Kevin's not here now so we could revert to type. But we decided to give it another four weeks until Kevin would return to help us again.
 
