@@ -6,7 +6,7 @@ title: Talks by Joe Wright
 
 ## Time bandits: don’t let these vampires get you
 
-<iframe src="https://player.vimeo.com/video/299164670" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/299164670" width="500" height="280" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 Given at: *Lean Agile Scotland (2018)*
 
