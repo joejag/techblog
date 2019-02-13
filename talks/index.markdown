@@ -4,6 +4,12 @@ status: publish
 title: Talks by Joe Wright
 ---
 
+## Time bandits: don’t let these vampires get you
+
+<iframe src="https://player.vimeo.com/video/299164670" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+Given at: *Lean Agile Scotland (2018)*
+
 ## Tackling 16 years of legacy code with mob programming and Lego
 
 <iframe width="500" height="280" src="https://www.youtube.com/embed/kOACFsO0blU" frameborder="0" allowfullscreen></iframe>
@@ -21,7 +27,6 @@ Given at: *Re:develop (2015), Lean Agile Scotland (2015)*
 <iframe src="https://player.vimeo.com/video/97273731" width="500" height="280" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 Given at: *MagmaConf (2014), Techmeetup (2014)*
-
 
 ## Continuous Delivery - A Better Software Deployment Strategy
 
