@@ -6,7 +6,7 @@ title: "The bug that led to strike action"
 <p class='header-image'><img width="100%" src="{{ site.url }}/assets/2019/strike.jpg"/>
 <a class="attribution" href="https://www.pexels.com/photo/people-rallying-carrying-on-strike-signage-1094323/">'Rallying' by Martin Lopez</a></p>
 
-I've just remembered about the time I was asked to help fix a bug in production and ended up being named by a trade union as a reason they are going on strike.
+I've just remembered the time I was asked to help fix a bug in production and ended up being named by a trade union as a reason they are going on strike.
 
 It was my first week at the org after joining via a consultancy. The bug was a NullPointerException with a stack trace and line number. Fairly simple right? Look at the line in question and figure out what has been overlooked that allowed it to be null.
 
