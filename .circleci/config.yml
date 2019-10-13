@@ -13,8 +13,8 @@ jobs:
 
     steps:
       - checkout
+      - run: curl -sLO http://cdn-fastly.deb.debian.org/debian/pool/main/r/rsync/rsync_3.1.3-6_amd64.deb && sudo dpkg -i rsync_3.1.3-6_amd64.deb
       - run: bundle install --jobs=4 --retry=3 --path vendor/bundle
       - run: bundle exec jekyll build
-      - run: sudo apt-get install rsync=3.1.3-6
       - run: rsync -avz -e "ssh -o StrictHostKeyChecking=no" _site/ ubuntu@joejag.com:/home/ubuntu/sites/code.joejag.com
           
