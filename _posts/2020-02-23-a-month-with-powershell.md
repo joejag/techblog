@@ -132,7 +132,9 @@ Index        : {}
 
 Which you can then use, as I do for my prompt, via `$(Get-GitStatus).Branch`.
 
-Sounds good right, but there are downsides to using Powershell on a UNIX. One of which is that commands you find on StackOverflow may not work anymore. For example, I wanted to check the TLS cert on this domain on the command line; a quick Google told me to use `echo | openssl s_client -showcerts -servername joejag.com -connect joejag.com:443 2>/dev/null | openssl x509 -inform pem -noout -text` which works fine in Bash or Zsh. Still, in Powershell, it throws an error for some reason. It's just more accessible to the other shell then work out what's wrong.
+Sounds good right, but there are downsides to using Powershell on a UNIX. One of which is that commands you find on StackOverflow may not work anymore. For example, I wanted to check the TLS cert on this domain on the command line; a quick Google told me to use `echo | openssl s_client -showcerts -servername joejag.com -connect joejag.com:443 2>/dev/null | openssl x509 -inform pem -noout -text` which works fine in Bash or Zsh. Still, in Powershell, it throws an error for some reason. 
+
+It's easier to switch to another shell then work out what's wrong in Powershell.
 
 When I wrote my [zsh article](https://code.joejag.com/2014/why-zsh.html) my final question was whether you should change your default shell to Zsh over Bash. With my answer being an emphatic 'yes!'. Once I had things working well, I tried to do this with Powershell, but it's not possible. If you `cat /etc/shells` you can see what's available on your system. For me, that's:
 
@@ -146,7 +148,9 @@ When I wrote my [zsh article](https://code.joejag.com/2014/why-zsh.html) my fina
 /usr/bin/zsh
 ```
 
-No `pwsh` in sight! This is because Powershell has not been made to work using the POSIX standard for starting shells, which involves reading some environment setup. However, they [are working on it](https://github.com/PowerShell/PowerShell-RFC/blob/master/2-Draft-Accepted/RFC0040-PowerShell-as-Login-Shell.md) and expect it to be possible when Powershell 7 comes out (I'm using Powershell 6 while writing this).
+No `pwsh` in sight! 
+
+This is because Powershell has not been made to work using the POSIX standard for starting shells, which involves reading some environment setup. However, they [are working on it](https://github.com/PowerShell/PowerShell-RFC/blob/master/2-Draft-Accepted/RFC0040-PowerShell-as-Login-Shell.md) and expect it to be possible when Powershell 7 comes out (I'm using Powershell 6 while writing this).
 
 I got around this by putting `pwsh` in my bash profile to start a new shell. This isn't perfect, but the best you can do right now.
 
@@ -162,6 +166,6 @@ So to summarise:
   - You cannot use it as a login shell (yet)
   - UNIX systems are seen as a second class due to the legacy of Powershell 'desktop' vs 'core' versions
   - Some commands you copy and paste from online won't work
-  - PSReadLine isn't perfect, leading to clumsy tabbing
+  - PSReadLine isn't perfect, leading to clumsy tabbing behaviour
 
 I'm really enjoyed using Powershell as my default shell. But I can't recommend it to anyone else until most of the disadvantages are met. With PS7 coming out as a login shell and the community moving to embrace the 'core' version over 'desktop' then it'll be in a healthier place than any other shell. But we aren't there yet.
