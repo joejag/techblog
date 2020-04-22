@@ -20,21 +20,15 @@ Now, customising your prompt in Bash and Zsh is a matter of adding a bunch of hi
 All you need to do to set your prompt in Powershell is override the `Prompt` function with whatever you want. So a minimal prompt could be:
 
 {% highlight powershell %}
-
-```powershell
 function Prompt {
    Write-Host '>' -NoNewline
    return " "
 }
-```
-
 {% endhighlight %}
 
 Which is pretty neat, as you can add whatever you want in a straightforward way. From this, I found a Git module which provides you with a `Get-GitStatus` function, which we will come back to. With that, it was simple to add the elements that make up my preferred prompt:
 
 {% highlight powershell %}
-
-```powershell
 function Prompt {
     # Check to see if the last command was successful
     if ($?) {
@@ -61,8 +55,6 @@ function Prompt {
 
     return " "
 }
-```
-
 {% endhighlight %}
 
 You can see my entire profile in this [gist](https://gist.github.com/joejag/9a5df82c4db2b1b43398dafa41057d88).
@@ -89,8 +81,6 @@ Before I felt comfortable submitting a pull request to a real repository, I want
 There's even a unit testing framework called [Pester](https://github.com/pester/Pester) which makes testing possible in a modern fashion. Here is my attempt at solving the [Urnfield problem](https://code.joejag.com/coding-dojo/converting-between-different-numeral-systems/) inlined with tests.
 
 {% highlight powershell %}
-
-```powershell
 function urnfield {
     Param([Parameter(Mandatory = $True)] $amount)
     $ones = $amount % 5
@@ -113,8 +103,6 @@ It 'handles other interesting numbers under 30' {
     urnfield 6 | Should -Be '/\'
     urnfield 29 | Should -Be '////\\\\\'
 }
-```
-
 {% endhighlight %}
 
 One of the significant advantages of Powershell is that it pipes **objects** rather than **strings** between programs. For example, if you do a `ls` in bash, it returns a string output of files. When you do that in Powershell, it returns a list of files. The default behaviour is then to print these objects.
@@ -125,7 +113,7 @@ Small things like this clean up complicated pipes.
 
 For example with the `Get-GitStatus` command you get an object back like:
 
-```powershell
+```
 HasWorking   : True
 Upstream     : origin/master
 Branch       : master
@@ -174,5 +162,6 @@ So to summarise:
   - You cannot use it as a login shell (yet)
   - UNIX systems are seen as a second class due to the legacy of Powershell 'desktop' vs 'core' versions
   - Some commands you copy and paste from online won't work
+  - PSReadLine isn't perfect, leading to clumsy tabbing
 
-I'm going to keep using Powershell as my default shell as I enjoy learning new tools. But I can't recommend it to anyone else until most of the disadvantages are met. With PS7 coming out as a login shell and the community moving to embrace the 'core' version over 'desktop' then it'll be in a healthier place than any other shell. But we aren't there yet.
+I'm really enjoyed using Powershell as my default shell. But I can't recommend it to anyone else until most of the disadvantages are met. With PS7 coming out as a login shell and the community moving to embrace the 'core' version over 'desktop' then it'll be in a healthier place than any other shell. But we aren't there yet.
