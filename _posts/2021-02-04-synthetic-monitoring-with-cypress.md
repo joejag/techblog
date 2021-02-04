@@ -17,11 +17,11 @@ _So how doe this work?_
 
 The approach I'm suggesting requires adding one more component into your traditional architecture which is dedicated to running the tests and producing reports.
 
-In this example architecture, I'm assuming you are tracking service health metrics with InfluxDb, but that part could be anything else.
+In this example architecture, I'm assuming you are tracking service health metrics with InfluxDb. But you can use something else or ignore that part entirely.
 
 <p class='header-image'><a href="{{ site.url }}/assets/2021/synthetic_monitoring.jpg"><img alt='Diagram showing that Synthetic Monitoring is another process you run in your production environment' width="100%" src="{{ site.url }}/assets/2021/synthetic_monitoring.jpg"/></a></p>
 
-There are some services online that let can perform Synthetic Monitoring for you, but sometimes it's nice to have control over the tests and execution environment. For this article, I've put together an [example of how to run Cypress](https://github.com/joejag/synthetic-cypress/) inside a microservice continuously against one of your environments.
+There are some services online that let can perform Synthetic Monitoring for you, but sometimes it's desirable to have control over the tests and execution environment. For this article, I've put together an [example of how to run Cypress](https://github.com/joejag/synthetic-cypress/) inside a microservice continuously against one of your environments.
 
 If you look over the code, you'll notice there's only one non-Cypressy file here: the `server.js`. This file contains an Express server which hooks into the [Cypress module API](https://docs.cypress.io/guides/guides/module-api.html) with
 
