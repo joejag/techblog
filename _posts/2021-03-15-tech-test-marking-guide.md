@@ -3,7 +3,7 @@ layout: post
 title: "Tech Test Marking Guide"
 ---
 
-When reviewing code, I find I can easily be swayed by a romantic interpretation of the code "This looks like my code!" or "Urgh, this bit is hard to understand". 
+When reviewing code, I find I can easily be swayed by a romantic interpretation of the code _"This looks like my code!"_ or _"Urgh, this bit is hard to understand"_. 
 
 It's pretty easy to get caught on one part and let that bias your opinion on the whole work.
 
@@ -17,33 +17,30 @@ I've helped folks get promotions using this system.
 
 Find yourself some problem, then score the solution out of 22 points.
 
-1. __It works__: The code implements the specification (8 points, meets spec is 8 - reduce the score for missing parts or bugs found)
+1. __It works__ (8 points) 
+  * Meets spec is 8 - reduce the score for missing parts or bugs found)
 
 2. The code is __easy to read__ (4 points)
-
-* Method names are self-describing and show intent (i.e. not misleading)
-* Comments, if any, say why rather than how
-* Methods are short
-* Clear control flow (i.e. you can follow what it is doing)
+  * Method names are self-describing and show intent (i.e. not misleading)
+  * Comments, if any, say why rather than how
+  * Methods are short
+  * Clear control flow (i.e. you can follow what it is doing)
 
 3. It's __tested__ (4 points)
-
-* Test names are explanatory
-* Expected test cases are present
-* Tests are explicit (i.e. it is obvious what they do and not over 15+ lines per test method)
-* The tests are logical (i.e. makes sense that they are there)
+  * Test names are explanatory
+  * Expected test cases are present
+  * Tests are explicit (i.e. it is obvious what they do and not over 15+ lines per test method)
+  * The tests are logical (i.e. makes sense that they are there)
 
 4. It's __maintainable and robust__ (4 points)
-
-* No dead code
-* Defensive at the system boundaries (e.g. user input, API boundaries)
-* Modularised (e.g. follows Single Responsibility Pattern)
-* Can be built and ran in one step
+  * No dead code
+  * Defensive at the system boundaries (e.g. user input, API boundaries)
+  * Modularised (e.g. follows Single Responsibility Pattern)
+  * Can be built and ran in one step
 
 5. The __write up__ (a README.md) is complete (2 points)
-
-* It mentions how to run the application
-* There is some reasoning about tradeoffs made while writing the application.
+  * It mentions how to run the application
+  * There is some reasoning about tradeoffs made while writing the application.
 
 ### A last thought
 
