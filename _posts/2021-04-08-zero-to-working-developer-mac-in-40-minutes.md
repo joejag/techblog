@@ -28,6 +28,9 @@ There are a few techniques that make this possible:
 
 You are hopefully doing the first four already. The fifth is a bit rarer, but it's the one that enables you to be resilient to bad luck.
 
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">If you want resiliency, destroy your environments.<br><br>That includes your desktop. Do that at least monthly.</p>&mdash; Gary Fleming (@garyfleming) <a href="https://twitter.com/garyfleming/status/993542361367089159?ref_src=twsrc%5Etfw">May 7, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 The key is practicing restoring your machine before there is a crisis.
 
 ## How to go from zero to productive in 40 minutes on a brand new Mac
